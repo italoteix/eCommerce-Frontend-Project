@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #242424;
+  margin: 0;
+}
+
+.header-top {
+  background-color: #242424;
+}
+
+/*# sourceMappingURL=application.css.map */

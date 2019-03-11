@@ -1,14 +1,28 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-  color: #242424;
+  color: #7d7d7d;
   margin: 0;
-}
+  text-align: center; }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto; }
 
 .header-top {
-  background-color: #242424;
-}
+  background-color: #242424; }
+
+.search-form button {
+  height: 100%;
+  font-size: 26px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent; }
+
+#logo {
+  color: #57c5a0; }
 
 /*# sourceMappingURL=application.css.map */

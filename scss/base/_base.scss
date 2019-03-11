@@ -5,6 +5,14 @@
   }
   
 body {
-    color: $color-prim;
+    color: $color-text-prim;
     margin: 0;
+    text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
 }

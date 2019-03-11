@@ -3,18 +3,35 @@
 }
 
 .search-form {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid $color-text-prim;
+    border-right: 1px solid $color-text-prim;
+    height: 41px;
     button {
-        // position: absolute;
         height: 100%;
-        // right: 18px;
-        // top: 0;
         font-size: 26px;
         border: none;
         cursor: pointer;
         background-color: transparent;
     }
+    input {
+        background-color: inherit;
+        border: none;
+    }
+}
+
+.btn-login {
+    display: flex;
+    border-left: 1px solid $color-text-prim;
+    border-right: 1px solid $color-text-prim;
+    height: 41px;
+    align-items: center;
 }
 
 #logo {
     color: $color-highlight;
+    font-family: 'gothic', Helvetica, Arial, sans-serif;
+    font-size: 1.6875rem;
+    margin-right: auto;
 }

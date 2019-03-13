@@ -5,6 +5,7 @@
   }
   
 body {
+  background-color: $color-background;
     color: $color-text-prim;
     margin: 0;
     text-align: center;
@@ -12,10 +13,6 @@ body {
 }
 
 .container {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
   width: 80%;
   max-width: 960px;
-  margin: auto;
 }

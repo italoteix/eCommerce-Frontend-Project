@@ -2,18 +2,15 @@
   box-sizing: border-box; }
 
 body {
+  background-color: #ebe7df;
   color: #7d7d7d;
   margin: 0;
   text-align: center;
   font-family: 'Aller', Helvetica, Arial, sans-serif; }
 
 .container {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
   width: 80%;
-  max-width: 960px;
-  margin: auto; }
+  max-width: 960px; }
 
 /*
 Flaticon icon font: Flaticon
@@ -32,9 +29,8 @@ Creation date: 10/03/2019 23:59
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
-  font-size: 20px;
-  font-style: normal;
-  margin-left: 20px; }
+  font-size: 14px;
+  font-style: normal; }
 
 .flaticon-search:before {
   content: "\f100"; }
@@ -81,35 +77,52 @@ Creation date: 10/03/2019 23:59
   src: url("./../fonts/gothic.eot");
   src: local("gothic"), url("./../fonts/gothic.woff"); }
 .header-top {
-  background-color: #242424; }
+  background-color: #242424;
+  font-size: 0.75rem;
+  padding: 1px; }
+  .header-top .row {
+    margin: 0.125rem 0; }
 
 .search-form {
   display: flex;
   align-items: center;
   border-left: 1px solid #7d7d7d;
-  border-right: 1px solid #7d7d7d;
-  height: 41px; }
+  height: 41px;
+  padding: 0 1.4rem; }
   .search-form button {
-    height: 100%;
-    font-size: 26px;
     border: none;
     cursor: pointer;
     background-color: transparent; }
   .search-form input {
     background-color: inherit;
-    border: none; }
+    border: none;
+    width: 6.2rem; }
 
 .btn-login {
   display: flex;
   border-left: 1px solid #7d7d7d;
   border-right: 1px solid #7d7d7d;
   height: 41px;
-  align-items: center; }
+  align-items: center;
+  padding: 0 .875rem; }
 
 #logo {
   color: #57c5a0;
   font-family: 'gothic', Helvetica, Arial, sans-serif;
-  font-size: 1.6875rem;
-  margin-right: auto; }
+  font-size: 1.6875rem; }
+
+.header-bottom {
+  background-color: #fff; }
+  .header-bottom .navbar {
+    padding: 0; }
+
+.nav-item {
+  border-left: 1px solid #ebe7df; }
+  .nav-item:last-of-type {
+    border-right: 1px solid #ebe7df; }
+
+#navbarNav .nav-link {
+  padding: 1rem;
+  color: #242424; }
 
 /*# sourceMappingURL=application.css.map */

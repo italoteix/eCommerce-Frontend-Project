@@ -1,16 +1,19 @@
 .header-top {
     background-color: $color-prim;
+    font-size: 0.75rem;
+    padding: 1px;
+    .row {
+        margin: 0.125rem 0;
+    }
 }
 
 .search-form {
     display: flex;
     align-items: center;
     border-left: 1px solid $color-text-prim;
-    border-right: 1px solid $color-text-prim;
     height: 41px;
+    padding: 0 1.4rem;
     button {
-        height: 100%;
-        font-size: 26px;
         border: none;
         cursor: pointer;
         background-color: transparent;
@@ -18,6 +21,7 @@
     input {
         background-color: inherit;
         border: none;
+        width: 6.2rem;
     }
 }
 
@@ -27,11 +31,32 @@
     border-right: 1px solid $color-text-prim;
     height: 41px;
     align-items: center;
+    padding: 0 .875rem;
 }
 
 #logo {
     color: $color-highlight;
     font-family: 'gothic', Helvetica, Arial, sans-serif;
     font-size: 1.6875rem;
-    margin-right: auto;
+}
+
+.header-bottom {
+    background-color: $white;
+    .navbar {
+        padding: 0;
+    }
+}
+
+.nav-item {
+    border-left: 1px solid $color-background;
+    &:last-of-type {
+        border-right: 1px solid $color-background;
+    }
+}
+
+#navbarNav {
+    .nav-link {
+        padding: 1rem;
+        color: $color-prim;
+    }
 }

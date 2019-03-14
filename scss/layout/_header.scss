@@ -60,3 +60,16 @@
         color: $color-prim;
     }
 }
+
+.badge {
+    background-color: $color-span;
+    color: $white;
+    font-size: 0.65rem;
+    width: 1.7em;
+    height: auto;
+    padding: 0.4rem 0;
+  }
+
+  .flaticon-buy + span {
+      background-color: $color-highlight;
+  }

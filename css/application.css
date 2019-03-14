@@ -10,7 +10,11 @@ body {
 
 .container {
   width: 80%;
-  max-width: 960px; }
+  max-width: 960px;
+  padding: 0; }
+
+.row {
+  margin: 0; }
 
 /*
 Flaticon icon font: Flaticon
@@ -29,7 +33,7 @@ Creation date: 10/03/2019 23:59
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
-  font-size: 14px;
+  font-size: 1em;
   font-style: normal; }
 
 .flaticon-search:before {
@@ -39,7 +43,8 @@ Creation date: 10/03/2019 23:59
   content: "\f101"; }
 
 .flaticon-star:before {
-  content: "\f102"; }
+  content: "\f102";
+  font-weight: bold; }
 
 .flaticon-eye:before {
   content: "\f103"; }
@@ -76,6 +81,12 @@ Creation date: 10/03/2019 23:59
   font-family: 'gothic';
   src: url("./../fonts/gothic.eot");
   src: local("gothic"), url("./../fonts/gothic.woff"); }
+.button {
+  padding: 1rem 2rem;
+  border-left: 1px solid #ebe7df; }
+  .button:last-of-type {
+    border-right: 1px solid #ebe7df; }
+
 .header-top {
   background-color: #242424;
   font-size: 0.75rem;
@@ -124,5 +135,16 @@ Creation date: 10/03/2019 23:59
 #navbarNav .nav-link {
   padding: 1rem;
   color: #242424; }
+
+.badge {
+  background-color: #adadad;
+  color: #fff;
+  font-size: 0.65rem;
+  width: 1.7em;
+  height: auto;
+  padding: 0.4rem 0; }
+
+.flaticon-buy + span {
+  background-color: #57c5a0; }
 
 /*# sourceMappingURL=application.css.map */

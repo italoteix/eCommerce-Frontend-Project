@@ -27,13 +27,13 @@
     [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
     [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
       font-family: Flaticon;
-            font-size: 14px;
+            font-size: 1em;
     font-style: normal;
     }
     
     .flaticon-search:before { content: "\f100"; }
     .flaticon-buy:before { content: "\f101"; }
-    .flaticon-star:before { content: "\f102"; }
+    .flaticon-star:before { content: "\f102"; font-weight: bold; }
     .flaticon-eye:before { content: "\f103"; }
     .flaticon-export:before { content: "\f104"; }
     .flaticon-social:before { content: "\f105"; }

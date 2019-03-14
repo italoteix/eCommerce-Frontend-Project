@@ -1,4 +1,7 @@
 .button {
-    border: 1px solid $color-text-prim;
-    // background-color: red;
+    padding: 1rem 2rem;
+    border-left: 1px solid $color-background;
+    &:last-of-type {
+        border-right: 1px solid $color-background;
+    }
 }

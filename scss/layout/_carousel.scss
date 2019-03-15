@@ -1,0 +1,36 @@
+.carousel-indicators {
+    bottom: -5.8rem;
+    background-color: $color-sec;
+    margin: 0;
+    li {
+        text-indent: 0;
+        width: 11rem;
+        margin-bottom: 4rem;
+        padding: 1px;
+    }
+    h5 {
+        color: $white;
+    }
+    .active {
+        background-color: $color-highlight;
+    }
+}
+
+.bar {
+    position: absolute;
+    top: 7px;
+    width: 41%;
+    height: 12px;
+    background-color: $black;
+    z-index: -1;
+    display: flex;
+    div {
+        flex-grow: 1;
+        border-right: 2px solid $color-sec;
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+}
+

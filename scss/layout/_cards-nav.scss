@@ -1,0 +1,9 @@
+.cards-nav {
+    background-color: $color-prim;
+    display: block;
+    clear: both;
+    .container {
+        display: flex;
+        flex-grow: 1;
+    }
+}

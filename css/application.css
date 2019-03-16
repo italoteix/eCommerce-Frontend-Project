@@ -47,7 +47,8 @@ Creation date: 10/03/2019 23:59
   font-weight: bold; }
 
 .flaticon-eye:before {
-  content: "\f103"; }
+  content: "\f103";
+  font-weight: bold; }
 
 .flaticon-export:before {
   content: "\f104"; }
@@ -97,6 +98,26 @@ p {
   .button:last-of-type {
     border-right: 1px solid #ebe7df; }
 
+.price-tag {
+  background-color: #57c5a0;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  transform: translateY(-50%);
+  line-height: 60px;
+  font-family: 'Aller', Helvetica, Arial, sans-serif; }
+
+.nav-icons a {
+  color: #6e6e6e; }
+  .nav-icons a:hover {
+    color: #57c5a0; }
+.nav-icons .nav-item {
+  background-color: #fff;
+  margin: 1px; }
+
 .header-top {
   background-color: #242424;
   font-size: 0.75rem;
@@ -137,14 +158,13 @@ p {
   .header-bottom .navbar {
     padding: 0; }
 
-.nav-item {
-  border-left: 1px solid #ebe7df; }
-  .nav-item:last-of-type {
-    border-right: 1px solid #ebe7df; }
-
 #navbarNav .nav-link {
   padding: 1rem;
   color: #242424; }
+#navbarNav .nav-item {
+  border-left: 1px solid #ebe7df; }
+  #navbarNav .nav-item:last-of-type {
+    border-right: 1px solid #ebe7df; }
 
 .badge {
   background-color: #adadad;
@@ -184,5 +204,23 @@ p {
     border-right: 2px solid #2e2e2e; }
     .bar div:last-child {
       border-right: none; }
+
+.carousel-caption {
+  color: #242424;
+  top: 42%;
+  transform: translateY(-50%);
+  left: 50%;
+  text-align: left;
+  font-family: 'Aller Light', Helvetica, Arial, sans-serif; }
+  .carousel-caption p {
+    font-size: 1.2rem; }
+
+.cards-nav {
+  background-color: #242424;
+  display: block;
+  clear: both; }
+  .cards-nav .container {
+    display: flex;
+    flex-grow: 1; }
 
 /*# sourceMappingURL=application.css.map */

@@ -31,6 +31,16 @@
             border-right: none;
         }
     }
-
 }
 
+.carousel-caption {
+    color: $color-prim;
+    top: 42%;
+    transform: translateY(-50%);
+    left: 50%;
+    text-align: left;
+    font-family: 'Aller Light', Helvetica, Arial, sans-serif;
+    p {
+        font-size: 1.2rem;
+    }
+}

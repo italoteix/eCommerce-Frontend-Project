@@ -47,17 +47,16 @@
     }
 }
 
-.nav-item {
-    border-left: 1px solid $color-background;
-    &:last-of-type {
-        border-right: 1px solid $color-background;
-    }
-}
-
 #navbarNav {
     .nav-link {
         padding: 1rem;
         color: $color-prim;
+    }
+    .nav-item {
+        border-left: 1px solid $color-background;
+        &:last-of-type {
+            border-right: 1px solid $color-background;
+        }
     }
 }
 

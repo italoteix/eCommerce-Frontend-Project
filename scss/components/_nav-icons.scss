@@ -1,0 +1,12 @@
+.nav-icons {
+    a {
+        color: $color-icons;
+        &:hover {
+            color: $color-highlight;
+        }
+    }
+    .nav-item {
+        background-color: $white;
+        margin: 1px;
+    }
+}

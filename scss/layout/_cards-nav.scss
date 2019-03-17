@@ -1,9 +1,23 @@
 .cards-nav {
+    color: $white;
+    font-family: 'Aller Light', Helvetica, Arial, sans-serif;
+    font-size: 1.58rem;
     background-color: $color-prim;
-    display: block;
-    clear: both;
     .container {
         display: flex;
         flex-grow: 1;
+    }
+    .card-item {
+        margin: 24px 9px;
+        position: relative;
+    }
+    .card-caption {
+        white-space: nowrap;
+        padding: 12px 23px;
+        background-color: $color-prim-alpha;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }

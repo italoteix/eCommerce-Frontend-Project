@@ -1,12 +1,14 @@
 .carousel-indicators {
-    bottom: -5.8rem;
     background-color: $color-sec;
     margin: 0;
+    position: relative;
+    display: block;
     li {
         text-indent: 0;
         width: 11rem;
         margin-bottom: 4rem;
         padding: 1px;
+        display: inline-block;
     }
     h5 {
         color: $white;
@@ -19,11 +21,14 @@
 .bar {
     position: absolute;
     top: 7px;
-    width: 41%;
+    left: 0;
+    right: 0;
+    width: 42%;
     height: 12px;
     background-color: $black;
     z-index: -1;
     display: flex;
+    margin: auto;
     div {
         flex-grow: 1;
         border-right: 2px solid $color-sec;
@@ -43,4 +48,8 @@
     p {
         font-size: 1.2rem;
     }
+}
+
+.carousel {
+    position: relative;
 }

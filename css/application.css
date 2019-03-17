@@ -178,14 +178,16 @@ p {
   background-color: #57c5a0; }
 
 .carousel-indicators {
-  bottom: -5.8rem;
   background-color: #2e2e2e;
-  margin: 0; }
+  margin: 0;
+  position: relative;
+  display: block; }
   .carousel-indicators li {
     text-indent: 0;
     width: 11rem;
     margin-bottom: 4rem;
-    padding: 1px; }
+    padding: 1px;
+    display: inline-block; }
   .carousel-indicators h5 {
     color: #fff; }
   .carousel-indicators .active {
@@ -194,11 +196,14 @@ p {
 .bar {
   position: absolute;
   top: 7px;
-  width: 41%;
+  left: 0;
+  right: 0;
+  width: 42%;
   height: 12px;
   background-color: #000;
   z-index: -1;
-  display: flex; }
+  display: flex;
+  margin: auto; }
   .bar div {
     flex-grow: 1;
     border-right: 2px solid #2e2e2e; }
@@ -215,12 +220,27 @@ p {
   .carousel-caption p {
     font-size: 1.2rem; }
 
+.carousel {
+  position: relative; }
+
 .cards-nav {
-  background-color: #242424;
-  display: block;
-  clear: both; }
+  color: #fff;
+  font-family: 'Aller Light', Helvetica, Arial, sans-serif;
+  font-size: 1.58rem;
+  background-color: #242424; }
   .cards-nav .container {
     display: flex;
     flex-grow: 1; }
+  .cards-nav .card-item {
+    margin: 24px 9px;
+    position: relative; }
+  .cards-nav .card-caption {
+    white-space: nowrap;
+    padding: 12px 23px;
+    background-color: rgba(36, 36, 36, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=application.css.map */

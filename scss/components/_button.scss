@@ -5,3 +5,16 @@
         border-right: 1px solid $color-background;
     }
 }
+
+.show {
+    border: 1px solid $color-btn-show;
+    color: $color-btn-show;
+    font-size: 0.875rem;
+    padding: 3px 21px;
+    height: 1.9rem;
+    &:hover {
+        color: $color-prim;
+        border-color: $color-prim;
+        text-decoration: none;
+    }
+}

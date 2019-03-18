@@ -66,6 +66,12 @@
 	src: local('gothic'), url('./../fonts/gothic.woff');
 }
 
+h4 {
+  font-family: $font-sec;
+  font-size: 1.58rem;
+  color: $color-prim;
+}
+
 h5 {
   font-size: 19px;
   font-weight: 500;

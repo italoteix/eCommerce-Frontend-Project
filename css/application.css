@@ -6,7 +6,7 @@ body {
   color: #7d7d7d;
   margin: 0;
   text-align: center;
-  font-family: 'Aller', Helvetica, Arial, sans-serif; }
+  font-family: "Aller", Helvetica, Arial, sans-serif; }
 
 .container {
   width: 80%;
@@ -82,6 +82,11 @@ Creation date: 10/03/2019 23:59
   font-family: 'gothic';
   src: url("./../fonts/gothic.eot");
   src: local("gothic"), url("./../fonts/gothic.woff"); }
+h4 {
+  font-family: "Aller Light", Helvetica, Arial, sans-serif;
+  font-size: 1.58rem;
+  color: #242424; }
+
 h5 {
   font-size: 19px;
   font-weight: 500;
@@ -97,6 +102,17 @@ p {
   border-left: 1px solid #ebe7df; }
   .button:last-of-type {
     border-right: 1px solid #ebe7df; }
+
+.show {
+  border: 1px solid #bcb5a7;
+  color: #bcb5a7;
+  font-size: 0.875rem;
+  padding: 3px 21px;
+  height: 1.9rem; }
+  .show:hover {
+    color: #242424;
+    border-color: #242424;
+    text-decoration: none; }
 
 .price-tag {
   background-color: #57c5a0;
@@ -225,7 +241,7 @@ p {
 
 .cards-nav {
   color: #fff;
-  font-family: 'Aller Light', Helvetica, Arial, sans-serif;
+  font-family: "Aller Light", Helvetica, Arial, sans-serif;
   font-size: 1.58rem;
   background-color: #242424; }
   .cards-nav .container {
@@ -242,5 +258,22 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.product .row {
+  padding: 30px 0 0; }
+
+.card {
+  margin: 0 8px; }
+
+.card-body {
+  border-top: 2px solid #ebe7df; }
+  .card-body ul {
+    display: none; }
+  .card-body:hover {
+    padding: 0.68rem; }
+    .card-body:hover span {
+      display: none; }
+    .card-body:hover ul {
+      display: flex; }
 
 /*# sourceMappingURL=application.css.map */

@@ -126,6 +126,35 @@ p {
   line-height: 60px;
   font-family: 'Aller', Helvetica, Arial, sans-serif; }
 
+.tag-sale {
+  background-color: #242424;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-family: 'Aller', Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 0;
+  right: 1rem; }
+
+.tag-out {
+  background-color: #f27e4b;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-family: 'Aller', Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  line-height: 1rem;
+  padding-top: 0.8125rem; }
+
 .nav-icons a {
   color: #6e6e6e; }
   .nav-icons a:hover {
@@ -264,16 +293,33 @@ p {
 
 .card {
   margin: 0 8px; }
+  .card .price-tag {
+    position: absolute;
+    transform: translateY(0);
+    bottom: 0;
+    left: 1rem; }
 
 .card-body {
-  border-top: 2px solid #ebe7df; }
+  border-top: 2px solid #ebe7df;
+  padding: 0.7rem;
+  font-size: 1.125rem; }
   .card-body ul {
     display: none; }
+  .card-body .nav-link {
+    padding: 0.4rem 1rem; }
   .card-body:hover {
-    padding: 0.68rem; }
+    padding: 0.18rem; }
     .card-body:hover span {
       display: none; }
     .card-body:hover ul {
-      display: flex; }
+      display: flex;
+      justify-content: flex-end !important; }
+
+.blog {
+  background-color: #dfdbd4;
+  display: inline-block;
+  flex-grow: 1; }
+  .blog:last-of-type {
+    flex-grow: 2; }
 
 /*# sourceMappingURL=application.css.map */

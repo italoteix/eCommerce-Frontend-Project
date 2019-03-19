@@ -6,20 +6,41 @@
 
 .card {
     margin: 0 8px;
+    .price-tag {
+        position: absolute;
+        transform: translateY(0);
+        bottom: 0;
+        left: 1rem;
+    }
 }
 
 .card-body {
     border-top: 2px solid $color-background;
+    padding: 0.7rem;
+    font-size: 1.125rem;
     ul {
         display: none;
     }
+    .nav-link {
+        padding: 0.4rem 1rem;
+    }
     &:hover {
-        padding: 0.68rem;
+        padding: 0.18rem;
         span {
             display: none;
         }
         ul {
             display: flex;
+            justify-content: flex-end!important;
         }
+    }
+}
+
+.blog {
+    background-color: $color-blog;
+    display: inline-block;
+    flex-grow: 1;
+    &:last-of-type {
+        flex-grow: 2;
     }
 }

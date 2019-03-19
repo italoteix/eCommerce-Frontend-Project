@@ -1,0 +1,43 @@
+.price-tag {
+    background-color: $color-highlight;
+    color: $white;
+    display: inline-block;
+    font-size: 12px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    transform: translateY(-50%);
+    line-height: 60px;
+    font-family: 'Aller', Helvetica, Arial, sans-serif;
+}
+
+.tag-sale {
+    background-color: $color-prim;
+    color: $white;
+    display: inline-block;
+    font-size: 12px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-family: 'Aller', Helvetica, Arial, sans-serif;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+
+.tag-out {
+    background-color: $color-comp;
+    color: $white;
+    display: inline-block;
+    font-size: 12px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-family: 'Aller', Helvetica, Arial, sans-serif;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    line-height: 1rem;
+    padding-top: 0.8125rem;
+}

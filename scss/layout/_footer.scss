@@ -1,0 +1,14 @@
+footer {
+    background-color: $color-prim;
+    position: relative;
+}
+
+.copyright {
+    background-color: $color-sec;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    p {
+        // display: inline;
+    }
+}

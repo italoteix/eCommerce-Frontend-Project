@@ -155,6 +155,22 @@ p {
   line-height: 1rem;
   padding-top: 0.8125rem; }
 
+.tag-date {
+  background-color: #57c5a0;
+  color: #fff;
+  font-size: 0.625rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.625rem; }
+  .tag-date span {
+    font-size: 0.8125rem;
+    line-height: 0.625rem; }
+
 .nav-icons a {
   color: #6e6e6e; }
   .nav-icons a:hover {
@@ -315,11 +331,39 @@ p {
       display: flex;
       justify-content: flex-end !important; }
 
+.blog-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1; }
+
 .blog {
   background-color: #dfdbd4;
-  display: inline-block;
-  flex-grow: 1; }
+  max-width: 25%;
+  margin: 0 8px;
+  padding: 1.8125rem 0.8125rem;
+  text-align: left;
+  color: #242424; }
   .blog:last-of-type {
+    max-width: 50%;
     flex-grow: 2; }
+  .blog h6 {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin: 0; }
+  .blog p {
+    margin: 0; }
+  .blog .row {
+    padding: 17px 0 0; }
+
+footer {
+  background-color: #242424;
+  position: relative; }
+
+.copyright {
+  background-color: #2e2e2e;
+  position: absolute;
+  bottom: 0;
+  display: flex; }
 
 /*# sourceMappingURL=application.css.map */

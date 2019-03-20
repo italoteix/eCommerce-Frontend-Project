@@ -41,3 +41,21 @@
     line-height: 1rem;
     padding-top: 0.8125rem;
 }
+
+.tag-date {
+    background-color: $color-highlight;
+    color: $white;
+    font-size: 0.625rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.625rem;
+    span {
+        font-size: 0.8125rem;
+        line-height: 0.625rem;
+    }
+}

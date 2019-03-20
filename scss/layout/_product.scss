@@ -36,11 +36,33 @@
     }
 }
 
+.blog-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
 .blog {
     background-color: $color-blog;
-    display: inline-block;
-    flex-grow: 1;
+    max-width: 25%;
+    margin: 0 8px;
+    padding: 1.8125rem 0.8125rem;
+    text-align: left;
+    color: $color-prim;
     &:last-of-type {
+        max-width: 50%;
         flex-grow: 2;
+    }
+    h6 {
+        font-size: 0.875rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    p {
+        margin: 0;
+    }
+    .row {
+        padding: 17px 0 0;
     }
 }

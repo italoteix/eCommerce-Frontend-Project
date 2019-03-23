@@ -3,6 +3,17 @@ footer {
     position: relative;
 }
 
+.widget {
+    & > div {
+        flex: 1;
+        text-align: justify;
+        margin: 3rem 2rem;
+    }
+    h6 {
+        margin-bottom: 0.9rem;
+    }
+}
+
 .copyright {
     background-color: $color-sec;
     position: absolute;

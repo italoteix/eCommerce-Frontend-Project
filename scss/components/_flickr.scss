@@ -1,0 +1,23 @@
+.flickr-grid {
+    display: grid;
+    grid-template-columns: repeat(3,40px);  /* 3 columns */
+    grid-template-rows: repeat(2,40px); /* 2 rows  */
+    grid-gap:34px 38px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
+    img {
+        width: 60px;
+    }
+}
+
+.show {
+    // MUDAAAAAAAAAAAAAAAAAR
+    height: 100%;
+}
+
+
+// #mimg {
+//     width: 100%;
+// }
+
+// #images img {
+//     max-width: 100px;
+// }

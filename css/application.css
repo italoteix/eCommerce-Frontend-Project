@@ -179,6 +179,20 @@ p {
   background-color: #fff;
   margin: 1px; }
 
+.flickr-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  /* 3 columns */
+  grid-template-rows: repeat(2, 40px);
+  /* 2 rows  */
+  grid-gap: 34px 38px;
+  /* 50 pixels of space added between rows and 30 pixels added between columns  */ }
+  .flickr-grid img {
+    width: 60px; }
+
+.show {
+  height: 100%; }
+
 .header-top {
   background-color: #242424;
   font-size: 0.75rem;
@@ -359,6 +373,13 @@ p {
 footer {
   background-color: #242424;
   position: relative; }
+
+.widget > div {
+  flex: 1;
+  text-align: justify;
+  margin: 3rem 2rem; }
+.widget h6 {
+  margin-bottom: 0.9rem; }
 
 .copyright {
   background-color: #2e2e2e;

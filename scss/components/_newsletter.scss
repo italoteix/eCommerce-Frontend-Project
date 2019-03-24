@@ -1,0 +1,25 @@
+.field {
+    background-color: $color-sec;
+    border: none;
+    padding: 10px;
+    width: 215px;
+    margin: 0;
+}
+
+.newsletter {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    button {
+        width : 44px;
+        height : 44px;
+        background-color : $color-text-prim;
+        // right: 0;
+        cursor: pointer;
+        padding: 0;
+        border: none;
+        margin: 0;
+        color: $color-sec;
+        font-size: 22px;
+    }
+}

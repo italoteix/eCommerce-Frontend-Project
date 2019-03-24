@@ -13,6 +13,7 @@
     border-left: 1px solid $color-text-prim;
     height: 41px;
     padding: 0 1.4rem;
+    position: relative;
     button {
         border: none;
         cursor: pointer;
@@ -22,6 +23,9 @@
         background-color: inherit;
         border: none;
         width: 6.2rem;
+        &:focus {
+            outline: none;
+        }
     }
 }
 

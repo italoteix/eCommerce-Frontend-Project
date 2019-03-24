@@ -5,19 +5,14 @@
     grid-gap:34px 38px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
     img {
         width: 60px;
+        cursor: pointer;
     }
 }
 
 .show {
-    // MUDAAAAAAAAAAAAAAAAAR
     height: 100%;
 }
 
-
-// #mimg {
-//     width: 100%;
-// }
-
-// #images img {
-//     max-width: 100px;
-// }
+.modal-body {
+    text-align: center;
+}

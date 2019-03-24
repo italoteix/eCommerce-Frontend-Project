@@ -188,10 +188,71 @@ p {
   grid-gap: 34px 38px;
   /* 50 pixels of space added between rows and 30 pixels added between columns  */ }
   .flickr-grid img {
-    width: 60px; }
+    width: 60px;
+    cursor: pointer; }
 
 .show {
   height: 100%; }
+
+.modal-body {
+  text-align: center; }
+
+.twitter span {
+  color: #57c5a0; }
+
+.field {
+  background-color: #2e2e2e;
+  border: none;
+  padding: 10px;
+  width: 215px;
+  margin: 0; }
+
+.newsletter {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start; }
+  .newsletter button {
+    width: 44px;
+    height: 44px;
+    background-color: #7d7d7d;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    margin: 0;
+    color: #2e2e2e;
+    font-size: 22px; }
+
+.social-icon .nav-item {
+  background-color: #2e2e2e;
+  width: 44px;
+  height: 44px;
+  margin: 0 2px; }
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #7d7d7d;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0; }
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #2e2e2e;
+  border-bottom: 1px solid #7d7d7d; }
+
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #ebe7df; }
+
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: #ebe7df !important;
+  color: #7d7d7d; }
 
 .header-top {
   background-color: #242424;
@@ -205,7 +266,8 @@ p {
   align-items: center;
   border-left: 1px solid #7d7d7d;
   height: 41px;
-  padding: 0 1.4rem; }
+  padding: 0 1.4rem;
+  position: relative; }
   .search-form button {
     border: none;
     cursor: pointer;
@@ -214,6 +276,8 @@ p {
     background-color: inherit;
     border: none;
     width: 6.2rem; }
+    .search-form input:focus {
+      outline: none; }
 
 .btn-login {
   display: flex;
@@ -380,11 +444,27 @@ footer {
   margin: 3rem 2rem; }
 .widget h6 {
   margin-bottom: 0.9rem; }
+.widget p {
+  font-style: italic; }
+.widget h6 + p {
+  margin-bottom: 3rem; }
+
+.social {
+  border-top: 2px solid #1c1c1c; }
+  .social .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem; }
 
 .copyright {
-  background-color: #2e2e2e;
-  position: absolute;
-  bottom: 0;
-  display: flex; }
+  background-color: #2e2e2e; }
+  .copyright .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5625rem 0;
+    align-items: center; }
+  .copyright p {
+    text-align: left;
+    margin: 0; }
 
 /*# sourceMappingURL=application.css.map */

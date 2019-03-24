@@ -20,7 +20,7 @@
               <a id="logo" class="mr-auto">FOOSESHOES</a>
             <!-- search bar -->
             <form class="search-form">
-              <input type="text" placeholder="SEARCH" aria-label="Search">
+              <input id="myInput" type="text" placeholder="SEARCH" aria-label="Search">
               <button type="submit"><i class="flaticon-search"></i></button>
             </form>
             <!-- login button -->
@@ -355,19 +355,9 @@
           <!-- Blog -->
           <div class="blog">
             <h6>BLOG NEWS</h6>
-            <div class="row">
-              <div class="tag-date">APR <span>01</span></div>
-              <div>
-                <h6>Nice & clean. The best for yout blog!</h6>
-                <p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel</p>
-              </div>
+            <div id="blog1" class="row">
             </div>
-            <div class="row">
-              <div class="tag-date">APR <span>01</span></div>
-              <div>
-                <h6>What an eCommerce theme!</h6>
-                <p>Vulputate vel nibh. Class aptent taciti sociosqu ad litora</p>
-              </div>
+            <div id="blog2" class="row">
             </div>
           </div>
         </div>
@@ -384,56 +374,83 @@
             <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
           </div>
           <!-- Twitter Widget -->
-          <div>
+          <div class="twitter">
             <h6>TWITTER WIDGET</h6>
-            <div>
-              <p>@ericafustero Why thank you. Your work looks awesome by the way! @treemelody</p>
-              <p>19 days ago</p>
+            <div id="tweet1">
             </div>
-            <div>
-              <p>@roymarvelous You can seek a refund through TF if it is not as advertised - but it is :)</p>
-              <p>21 days ago</p>
+            <div id="tweet2">
             </div>
           </div>
           <!-- Flickr Widget -->
           <div>
             <h6>FLICKR WIDGET</h6>
             <div class="flickr-grid">
-              <img src="img/flk1.jpg" alt="flickr widget">
-              <img src="img/flk2.jpg" alt="flickr widget">
-              <img src="img/flk3.jpg" alt="flickr widget">
-              <img src="img/flk4.jpg" alt="flickr widget">
-              <img src="img/flk5.jpg" alt="flickr widget">
-              <img src="img/flk6.jpg" alt="flickr widget">
+              <img src="img/flk1.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
+              <img src="img/flk2.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
+              <img src="img/flk3.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
+              <img src="img/flk4.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
+              <img src="img/flk5.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
+              <img src="img/flk6.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
             </div>
           </div>
           <!-- Flickr Modal -->
-          <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="nyModalLabel" aria-hidden="true">
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="nyModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <button type="button" class="close ml-auto" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <div class="modal-body">
-                  <img id="mimg" src="">
+                  <img id="img01" src="" alt="flickr widget">
                 </div>
               </div>
             </div>
-          </div> -->
-          <div class="copyright">
-            <!-- <div class="container">
-              <p>
-                Copyright © Fooseshoes 2013.<br> 
-                Designed by EnzoLiVolti. 
-              </p>
-              <p>
-                Home / Support / Terms and Conditions / Faqs / Contact us
-              </p>
-            </div> -->
           </div>
-        </div>
-      </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        </div>    <!-- / row widget End -->
+      </div>    <!-- / container End -->
+      <!-- Social Row -->
+      <div class="social">
+        <div class="container">
+          <!-- Newsletter form -->
+          <form class="newsletter">
+            <input class="field" type="email" placeholder="Enter email for newsletter"></input>
+            <button type="submit">&gt;</button>
+          </form>
+          <!-- Social Buttons -->
+          <ul class="nav nav-icons justify-content-center social-icon">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="flaticon-social"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="flaticon-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="flaticon-google-plus"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="flaticon-linkedin"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="flaticon-flickr"></i></a>
+            </li>
+          </ul>
+        </div>    <!-- / container End -->
+      </div>   <!-- / Social Row End --> 
+      <!-- Copyright Row -->
+      <div class="copyright">
+        <div class="container">
+          <p>
+            Copyright © Fooseshoes 2013.<br> 
+              Designed by EnzoLiVolti.
+          </p>
+          <p>
+             <span> Home </span>/<span> Support </span>/<span> Terms and Conditions </span>/<span> Faqs </span>/<span> Contact us</span>
+          </p>
+        </div>    <!-- / container End -->
+      </div>    <!-- / Copyright Row End -->
+    </footer>   <!-- / Footer End-->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -1,456 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FOOSESHOES</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/application.css">
-  </head>
-  <body>
-    <!-- Header section -->
-    <header>
-      <!-- Top Header -->
-      <div class="header-top">
-        <div class="container">
-          <div class="row">
-              <!-- logo -->
-              <a id="logo" class="mr-auto">FOOSESHOES</a>
-            <!-- search bar -->
-            <form class="search-form">
-              <input id="myInput" type="text" placeholder="SEARCH" aria-label="Search">
-              <button type="submit"><i class="flaticon-search"></i></button>
-            </form>
-            <!-- login button -->
-            <div class="btn-login">
-              <a>
-                LOGIN or REGISTER
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Bottom Header -->
-      <div class="header-bottom">
-        <div class="container">
-          <div class="row">
-            <!-- Main Nav -->
-            <nav class="navbar navbar-expand-lg navbar-light mr-auto">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pages</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-            <!-- Wishlist -->
-            <div class="button">
-              <i class="flaticon-star"></i>
-              <span class="badge">30</span>
-            </div>
-            <!-- cart -->
-            <div class="button">
-              <i class="flaticon-buy"></i>
-              <span class="badge">0</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Main Content -->
-    <main>
-      <!-- Carousel -->
-      <div class="bd-example">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-          <!-- Carousel inner -->
-          <div class="carousel-inner">
-            <!-- First Banner -->
-            <div class="carousel-item active">
-              <img src="img/Agrupar 1.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <div class="price-tag">$145,99</div>
-                <h1>Pink Shoes 2013 Collection</h1>
-                <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget.</p>
-                <ul class="nav nav-icons">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="flaticon-eye"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- Second Banner -->
-            <div class="carousel-item">
-              <img src="img/banner2.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <div class="price-tag">$145,99</div>
-                <h1>Anna Field Exclusive Limited Edition</h1>
-                <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget.</p>
-                <ul class="nav nav-icons">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="flaticon-eye"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- Third Banner -->
-            <div class="carousel-item">
-              <img src="img/banner3.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <div class="price-tag">$145,99</div>
-                <h1>Prada's Summer Collection is Comming</h1>
-                <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget.</p>
-                <ul class="nav nav-icons">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="flaticon-eye"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Carousel indicator -->
-          <ol class="carousel-indicators hidden">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">
-              <h5>Pink Shoes</h5>
-              <p>Now at $145,99</p>
-            </li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1">
-              <h5>Anna Field</h5>
-              <p>Limited Edition</p>
-            </li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2">
-              <h5>Prada</h5>
-              <p>Summer is comming</p>
-            </li>
-            <div class="bar">
-                <div class="bar-cel"></div>
-                <div class="bar-cel"></div>
-                <div class="bar-cel"></div>
-            </div>
-          </ol>
-        </div>
-      </div>
-      <!-- Cards Nav -->
-      <div class="cards-nav">
-        <div class="container">
-          <div class="card-item">
-            <div class="card-caption">ON SALE</div>
-            <img src="img/onsale.png" alt="On sale">
-          </div>
-          <div class="card-item">
-            <div class="card-caption">SPECIAL OFFERS</div>
-            <img src="img/special-offer.png" alt="Special offer">
-          </div>
-          <div class="card-item">
-            <div class="card-caption">MUST HAVE</div>
-            <img src="img/must-have.png" alt="Must have">
-          </div>
-        </div>
-      </div>
-      <!-- Products Section -->
-      <div class="product container">
-        <!-- New arrivals -->
-        <div class="row">
-          <h4 class="mr-auto">New arrivals on FooseShoes</h4>
-          <a class="show" href="#">Show All</a>
-        </div>
-        <div class="row">
-          <div class="card">
-            <img src="img/item1.png" alt="On sale">
-            <div class="card-body">
-              <span>Even&Odd</span>
-              <ul class="nav nav-icons justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-eye"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="price-tag">$145,99</div>
-          </div>
-          <div class="card">
-            <img src="img/item2.png" alt="Special offer">
-            <div class="card-body">
-              <span>Even&Odd</span>
-              <ul class="nav nav-icons justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-eye"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="tag-sale">ON SALE!</div>
-            <div class="price-tag">$145,99</div>
-          </div>
-          <div class="card">
-            <img src="img/item3.png" alt="Must have">
-            <div class="card-body">
-              <span>Buffalo Decolletè</span>
-              <ul class="nav nav-icons justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-eye"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="price-tag">$145,99</div>
-          </div>
-        </div>
-        <!-- Best Sellers -->
-        <div class="row">
-          <h4 class="mr-auto">Best sellers of the month</h4>
-          <a class="show" href="#">Show All</a>
-        </div>
-        <div class="row">
-          <div class="card">
-            <img src="img/item4.png" alt="On sale">
-            <div class="card-body">
-              <span>Even&Odd</span>
-              <ul class="nav nav-icons justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-eye"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="price-tag">$145,99</div>
-          </div>
-          <div class="card">
-            <img src="img/item5.png" alt="Special offer">
-            <div class="card-body">
-              <span>Even&Odd</span>
-              <ul class="nav nav-icons justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-eye"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="price-tag">$145,99</div>
-          </div>
-          <div class="card">
-            <img src="img/item6.png" alt="Must have">
-            <div class="card-body">
-              <span>Buffalo Decolletè</span>
-              <ul class="nav nav-icons justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-eye"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="tag-out">OUT OF STOCK</div>
-            <div class="price-tag">$145,99</div>
-          </div>
-        </div>
-        <hr>
-        <!-- Text section -->
-        <div class="blog-row">
-          <!-- Shipping -->
-          <div class="blog">
-            <h6>FREE SHIPPING</h6>
-            <p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, </p>
-          </div>
-          <!-- Testimonials -->
-          <div class="blog">
-            <h6>TESTIMONIALS</h6>
-            <p>vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit [...]</p>
-            <p>- John Doe -</p>
-          </div>
-          <!-- Blog -->
-          <div class="blog">
-            <h6>BLOG NEWS</h6>
-            <div id="blog1" class="row">
-            </div>
-            <div id="blog2" class="row">
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <!-- Footer -->
-    <footer>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FOOSESHOES</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/application.css">
+</head>
+
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Top Header -->
+    <div class="header-top">
       <div class="container">
-        <!-- Widget Row -->
-        <div class="row widget">
-          <!-- Text Widget -->
-          <div>
-            <h6>TEXT WIDGET</h6>
-            <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        <div class="row">
+          <!-- logo -->
+          <a id="logo" class="mr-auto" href="index.html">FOOSESHOES</a>
+          <!-- search bar -->
+          <form class="search-form">
+            <input id="myInput" type="text" placeholder="SEARCH" aria-label="Search">
+            <button type="submit"><i class="flaticon-search"></i></button>
+          </form>
+          <!-- login button -->
+          <div class="btn-login">
+            <a href="#" data-toggle="modal" data-target=".login-form">
+              LOGIN or REGISTER
+            </a>
           </div>
-          <!-- Twitter Widget -->
-          <div class="twitter">
-            <h6>TWITTER WIDGET</h6>
-            <div id="tweet1">
-            </div>
-            <div id="tweet2">
-            </div>
-          </div>
-          <!-- Flickr Widget -->
-          <div>
-            <h6>FLICKR WIDGET</h6>
-            <div class="flickr-grid">
-              <img src="img/flk1.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
-              <img src="img/flk2.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
-              <img src="img/flk3.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
-              <img src="img/flk4.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
-              <img src="img/flk5.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
-              <img src="img/flk6.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
-            </div>
-          </div>
-          <!-- Flickr Modal -->
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="nyModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+          <!-- login Modal -->
+          <div class="modal fade login-form" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
               <div class="modal-content">
-                <button type="button" class="close ml-auto" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h5 class="modal-title">Login to our site</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!-- Modal Body -->
                 <div class="modal-body">
-                  <img id="img01" src="" alt="flickr widget">
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary btn-block">Sign In</button>
+                  </form>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                  <small>Not a member? <span data-toggle="modal" data-target=".register-form"
+                      data-dismiss="modal">Register here!</span></small>
                 </div>
               </div>
             </div>
+          </div> <!-- / modal End -->
+
+          <!-- Register Modal -->
+          <div class="modal fade register-form" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h5 class="modal-title">Sign up now</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Your Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                      <label for="emailRegister">Email address</label>
+                      <input type="email" class="form-control" id="emailRegister" aria-describedby="emailHelpRegister"
+                        placeholder="Enter email">
+                      <small id="emailHelpRegister" class="form-text text-muted">We'll never share your email with
+                        anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="passwordRegister">Password</label>
+                      <input type="password" class="form-control" id="passwordRegister" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary btn-block">Register</button>
+                  </form>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                  <small>Already a member? <span data-toggle="modal" data-target=".login-form"
+                      data-dismiss="modal">Login here!</span></small>
+                </div>
+              </div>
+            </div>
+          </div> <!-- / modal End -->
+        </div> <!-- / row End -->
+      </div> <!-- / container End -->
+    </div> <!-- / header top End -->
+
+    <!-- Bottom Header -->
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <!-- Main Nav -->
+          <nav class="navbar navbar-expand-lg navbar-light mr-auto">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Wishlist -->
+          <div class="button">
+            <i class="flaticon-star"></i>
+            <span class="badge">30</span>
           </div>
-        </div>    <!-- / row widget End -->
-      </div>    <!-- / container End -->
-      <!-- Social Row -->
-      <div class="social">
-        <div class="container">
-          <!-- Newsletter form -->
-          <form class="newsletter">
-            <input class="field" type="email" placeholder="Enter email for newsletter"></input>
-            <button type="submit">&gt;</button>
-          </form>
-          <!-- Social Buttons -->
-          <ul class="nav nav-icons justify-content-center social-icon">
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="flaticon-social"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="flaticon-twitter"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="flaticon-google-plus"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="flaticon-linkedin"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="flaticon-flickr"></i></a>
-            </li>
-          </ul>
-        </div>    <!-- / container End -->
-      </div>   <!-- / Social Row End --> 
-      <!-- Copyright Row -->
-      <div class="copyright">
-        <div class="container">
-          <p>
-            Copyright © Fooseshoes 2013.<br> 
-              Designed by EnzoLiVolti.
-          </p>
-          <p>
-             <span> Home </span>/<span> Support </span>/<span> Terms and Conditions </span>/<span> Faqs </span>/<span> Contact us</span>
-          </p>
-        </div>    <!-- / container End -->
-      </div>    <!-- / Copyright Row End -->
-    </footer>   <!-- / Footer End-->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
-  </body>
+          <!-- cart -->
+          <div class="button">
+            <i class="flaticon-cart-simple"></i>
+            <span class="badge">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main>
+    <!-- Carousel -->
+    <div class="bd-example">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <!-- Carousel inner -->
+        <div class="carousel-inner">
+          <!-- First Banner -->
+          <div class="carousel-item active">
+            <img src="img/Agrupar 1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="price-tag">$145,99</div>
+              <h1>Pink Shoes 2013 Collection</h1>
+              <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor
+                eget.</p>
+              <ul class="nav nav-icons">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"><i class="flaticon-eye"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Second Banner -->
+          <div class="carousel-item">
+            <img src="img/banner2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="price-tag">$145,99</div>
+              <h1>Anna Field Exclusive Limited Edition</h1>
+              <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor
+                eget.</p>
+              <ul class="nav nav-icons">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"><i class="flaticon-eye"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Third Banner -->
+          <div class="carousel-item">
+            <img src="img/banner3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="price-tag">$145,99</div>
+              <h1>Prada's Summer Collection is Comming</h1>
+              <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor
+                eget.</p>
+              <ul class="nav nav-icons">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"><i class="flaticon-eye"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel indicator -->
+        <ol class="carousel-indicators hidden">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">
+            <h5>Pink Shoes</h5>
+            <p>Now at $145,99</p>
+          </li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1">
+            <h5>Anna Field</h5>
+            <p>Limited Edition</p>
+          </li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2">
+            <h5>Prada</h5>
+            <p>Summer is comming</p>
+          </li>
+          <div class="bar">
+            <div class="bar-cel"></div>
+            <div class="bar-cel"></div>
+            <div class="bar-cel"></div>
+          </div>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Cards Nav -->
+    <div class="cards-nav">
+      <div class="container">
+        <div class="card-item">
+          <div class="card-caption"><a href="#">ON SALE</a></div>
+          <img src="img/onsale.png" alt="On sale">
+        </div>
+        <div class="card-item">
+          <div class="card-caption"><a href="#">SPECIAL OFFERS</a></div>
+          <img src="img/special-offer.png" alt="Special offer">
+        </div>
+        <div class="card-item">
+          <div class="card-caption"><a href="#">MUST HAVE</a></div>
+          <img src="img/must-have.png" alt="Must have">
+        </div>
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="product container">
+      <!-- New arrivals -->
+      <div class="row">
+        <h4 class="mr-auto">New arrivals on FooseShoes</h4>
+        <a class="show" href="#">Show All</a>
+      </div>
+      <div class="row">
+        <div class="card">
+          <img src="img/item1.png" alt="On sale">
+          <div class="card-body">
+            <span>Even&Odd</span>
+            <ul class="nav nav-icons justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-eye"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="price-tag">$145,99</div>
+        </div>
+        <div class="card">
+          <img src="img/item2.png" alt="Special offer">
+          <div class="card-body">
+            <span>Even&Odd</span>
+            <ul class="nav nav-icons justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-eye"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="tag-sale">ON SALE!</div>
+          <div class="price-tag">$145,99</div>
+        </div>
+        <div class="card">
+          <img src="img/item3.png" alt="Must have">
+          <div class="card-body">
+            <span>Buffalo Decolletè</span>
+            <ul class="nav nav-icons justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-eye"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="price-tag">$145,99</div>
+        </div>
+      </div>
+      <!-- Best Sellers -->
+      <div class="row">
+        <h4 class="mr-auto">Best sellers of the month</h4>
+        <a class="show" href="#">Show All</a>
+      </div>
+      <div class="row">
+        <div class="card">
+          <img src="img/item4.png" alt="On sale">
+          <div class="card-body">
+            <span>Even&Odd</span>
+            <ul class="nav nav-icons justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-eye"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="price-tag">$145,99</div>
+        </div>
+        <div class="card">
+          <img src="img/item5.png" alt="Special offer">
+          <div class="card-body">
+            <span>Even&Odd</span>
+            <ul class="nav nav-icons justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-eye"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="price-tag">$145,99</div>
+        </div>
+        <div class="card">
+          <img src="img/item6.png" alt="Must have">
+          <div class="card-body">
+            <span>Buffalo Decolletè</span>
+            <ul class="nav nav-icons justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-eye"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="tag-out">OUT OF STOCK</div>
+          <div class="price-tag">$145,99</div>
+        </div>
+      </div>
+      <hr>
+      <!-- Text section -->
+      <div class="blog-row">
+        <!-- Shipping -->
+        <div class="blog">
+          <h6>FREE SHIPPING</h6>
+          <p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class aptent taciti sociosqu ad
+            litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, </p>
+        </div>
+        <!-- Testimonials -->
+        <div class="blog">
+          <h6>TESTIMONIALS</h6>
+          <p>vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos. Donec erat sem, vehicula id dictum sit [...]</p>
+          <p>- John Doe -</p>
+        </div>
+        <!-- Blog -->
+        <div class="blog">
+          <h6>BLOG NEWS</h6>
+          <div id="blog1" class="row">
+          </div>
+          <div id="blog2" class="row">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <!-- Widget Row -->
+      <div class="row widget">
+        <!-- Text Widget -->
+        <div>
+          <h6>TEXT WIDGET</h6>
+          <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula
+            ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non
+            commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        </div>
+        <!-- Twitter Widget -->
+        <div class="twitter">
+          <h6>TWITTER WIDGET</h6>
+          <div id="tweet1">
+          </div>
+          <div id="tweet2">
+          </div>
+        </div>
+        <!-- Flickr Widget -->
+        <div>
+          <h6>FLICKR WIDGET</h6>
+          <div class="flickr-grid">
+            <img src="img/flk1.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
+            <img src="img/flk2.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
+            <img src="img/flk3.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
+            <img src="img/flk4.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
+            <img src="img/flk5.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
+            <img src="img/flk6.jpg" alt="flickr widget" class="myImg" data-toggle="modal" data-target="#myModal">
+          </div>
+        </div>
+        <!-- Flickr Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="nyModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close ml-auto" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">
+                <img id="img01" src="" alt="flickr widget">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- / row widget End -->
+    </div> <!-- / container End -->
+    <!-- Social Row -->
+    <div class="social">
+      <div class="container">
+        <!-- Newsletter form -->
+        <form class="newsletter">
+          <input class="field" type="email" placeholder="Enter email for newsletter"></input>
+          <button type="submit">&gt;</button>
+        </form>
+        <!-- Social Buttons -->
+        <ul class="nav nav-icons justify-content-center social-icon">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="flaticon-social"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="flaticon-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="flaticon-google-plus"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="flaticon-linkedin"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="flaticon-flickr"></i></a>
+          </li>
+        </ul>
+      </div> <!-- / container End -->
+    </div> <!-- / Social Row End -->
+    <!-- Copyright Row -->
+    <div class="copyright">
+      <div class="container">
+        <p>
+          Copyright © Fooseshoes 2013.<br>
+          Designed by EnzoLiVolti.
+        </p>
+        <p>
+          <a href="#"> Home </a>/<a href="#"> Support </a>/<a href="#"> Terms and Conditions </a>/<a href="#"> Faqs
+          </a>/<a href="#"> Contact us</a>
+        </p>
+      </div> <!-- / container End -->
+    </div> <!-- / Copyright Row End -->
+  </footer> <!-- / Footer End-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="js/index.js"></script>
+</body>
+
 </html>

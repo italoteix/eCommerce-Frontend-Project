@@ -71,8 +71,18 @@
     width: 1.7em;
     height: auto;
     padding: 0.4rem 0;
-  }
+    min-width: 23px;
+    position: relative;
+    bottom: 2px;
+    margin-left: 4px;
+}
 
-  .flaticon-buy + span {
-      background-color: $color-highlight;
-  }
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    span {
+        background-color: $color-highlight;
+    }   
+}

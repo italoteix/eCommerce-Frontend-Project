@@ -41,6 +41,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 1;
+    padding: 1rem 0 2rem;
 }
 
 .blog {
@@ -65,4 +66,8 @@
     .row {
         padding: 17px 0 0;
     }
+}
+
+hr {
+    margin: 4rem 0.5rem 2rem;
 }

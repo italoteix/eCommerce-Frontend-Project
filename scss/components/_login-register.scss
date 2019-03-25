@@ -1,0 +1,45 @@
+.login-form, .register-form {
+    .modal-body {
+        text-align: left;
+    }
+    .modal-footer {
+        justify-content: center;
+    }
+}
+
+.modal-header, .modal-body, .modal-footer {
+    background-color: $color-prim;
+    color: $color-text-prim;
+    input {
+        background-color: $color-sec;
+        border: none;
+    }
+}
+
+.modal-header {
+    border-bottom: 1px solid $color-sec;
+    .close {
+        color: $color-text-prim;
+        text-shadow: none;
+    }
+}
+
+.modal-footer {
+    border-top: 1px solid $color-sec;
+    span {
+        cursor: pointer;
+        color: $color-background;
+        &:hover {
+            color: $color-highlight;
+        }
+    }
+}
+
+.btn-outline-primary {
+    color: $color-highlight;
+    border-color: $color-highlight;
+    &:hover {
+        color: $color-prim;
+        background-color: $color-highlight;
+    }
+}

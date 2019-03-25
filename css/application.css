@@ -16,6 +16,11 @@ body {
 .row {
   margin: 0; }
 
+.form-control:focus, .field:focus {
+  border-color: #57c5a0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(97, 197, 160, 0.6);
+  outline: none; }
+
 /*
 Flaticon icon font: Flaticon
 Creation date: 10/03/2019 23:59
@@ -68,6 +73,18 @@ Creation date: 10/03/2019 23:59
 .flaticon-flickr:before {
   content: "\f109"; }
 
+.flaticon-down-arrow:before {
+  content: "\f10a"; }
+
+.flaticon-layout:before {
+  content: "\f10b"; }
+
+.flaticon-menu:before {
+  content: "\f10c"; }
+
+.flaticon-cart-simple:before {
+  content: "\f10d"; }
+
 @font-face {
   font-family: 'Aller';
   font-style: normal;
@@ -96,6 +113,12 @@ h5 {
 
 p {
   font-size: 12px; }
+
+a {
+  color: #7d7d7d; }
+  a:hover {
+    color: #57c5a0;
+    text-decoration: none; }
 
 .button {
   padding: 1rem 2rem;
@@ -254,6 +277,39 @@ p {
   background-color: #ebe7df !important;
   color: #7d7d7d; }
 
+.login-form .modal-body, .register-form .modal-body {
+  text-align: left; }
+.login-form .modal-footer, .register-form .modal-footer {
+  justify-content: center; }
+
+.modal-header, .modal-body, .modal-footer {
+  background-color: #242424;
+  color: #7d7d7d; }
+  .modal-header input, .modal-body input, .modal-footer input {
+    background-color: #2e2e2e;
+    border: none; }
+
+.modal-header {
+  border-bottom: 1px solid #2e2e2e; }
+  .modal-header .close {
+    color: #7d7d7d;
+    text-shadow: none; }
+
+.modal-footer {
+  border-top: 1px solid #2e2e2e; }
+  .modal-footer span {
+    cursor: pointer;
+    color: #ebe7df; }
+    .modal-footer span:hover {
+      color: #57c5a0; }
+
+.btn-outline-primary {
+  color: #57c5a0;
+  border-color: #57c5a0; }
+  .btn-outline-primary:hover {
+    color: #242424;
+    background-color: #57c5a0; }
+
 .header-top {
   background-color: #242424;
   font-size: 0.75rem;
@@ -311,9 +367,16 @@ p {
   font-size: 0.65rem;
   width: 1.7em;
   height: auto;
-  padding: 0.4rem 0; }
+  padding: 0.4rem 0;
+  min-width: 23px;
+  position: relative;
+  bottom: 2px;
+  margin-left: 4px; }
 
-.flaticon-buy + span {
+.button {
+  cursor: pointer; }
+
+.button:hover span {
   background-color: #57c5a0; }
 
 .carousel-indicators {
@@ -381,6 +444,8 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    .cards-nav .card-caption a {
+      color: inherit; }
 
 .product .row {
   padding: 30px 0 0; }
@@ -413,7 +478,8 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex-grow: 1; }
+  flex-grow: 1;
+  padding: 1rem 0 2rem; }
 
 .blog {
   background-color: #dfdbd4;
@@ -433,6 +499,9 @@ p {
     margin: 0; }
   .blog .row {
     padding: 17px 0 0; }
+
+hr {
+  margin: 4rem 0.5rem 2rem; }
 
 footer {
   background-color: #242424;
@@ -466,5 +535,28 @@ footer {
   .copyright p {
     text-align: left;
     margin: 0; }
+
+.banner {
+  position: relative;
+  display: flex; }
+
+.banner-caption {
+  color: #242424;
+  align-items: center;
+  left: 53%;
+  text-align: left;
+  font-family: 'Aller Light', Helvetica, Arial, sans-serif;
+  position: absolute;
+  max-width: 28%;
+  top: 13%; }
+  .banner-caption p {
+    font-size: 1.2rem; }
+  .banner-caption h1 {
+    flex: 3; }
+  .banner-caption .row {
+    align-items: center; }
+  .banner-caption .price-tag {
+    transform: none;
+    margin-right: 1.375rem; }
 
 /*# sourceMappingURL=application.css.map */

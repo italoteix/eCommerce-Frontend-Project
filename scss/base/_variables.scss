@@ -24,7 +24,12 @@ $color-blog             : #dfdbd4;
 $color-prim-alpha       : rgba(36, 36, 36, 0.9);
 $color-highlight-alpha  : rgba(97, 197, 160, 0.6);
 
-// Font Families ==============================================================================
+// Font Stack ==============================================================================
 
 $font-prim  : 'Aller', Helvetica, Arial, sans-serif;
 $font-sec   : 'Aller Light', Helvetica, Arial, sans-serif;
+
+// Media query breakpoints
+
+$brk-mid : '(max-width: 960px)';
+$brk-narrow   : '(max-width: 768px)';

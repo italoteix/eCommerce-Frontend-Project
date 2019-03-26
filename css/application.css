@@ -12,11 +12,15 @@ body {
   width: 80%;
   max-width: 960px;
   padding: 0; }
+  @media (max-width: 960px) {
+    .container {
+      max-width: 720px;
+      width: 90%; } }
 
 .row {
   margin: 0; }
 
-.form-control:focus, .field:focus {
+.form-control:focus, .field:focus, button:focus {
   border-color: #57c5a0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(97, 197, 160, 0.6);
   outline: none; }
@@ -126,16 +130,56 @@ a {
   .button:last-of-type {
     border-right: 1px solid #ebe7df; }
 
-.show {
+.show-all {
   border: 1px solid #bcb5a7;
   color: #bcb5a7;
   font-size: 0.875rem;
   padding: 3px 21px;
   height: 1.9rem; }
-  .show:hover {
+  .show-all:hover {
     color: #242424;
     border-color: #242424;
     text-decoration: none; }
+
+.btn-cat {
+  background-color: #242424;
+  border: none;
+  color: #fff;
+  padding: 1rem 3.75rem;
+  position: relative;
+  min-width: 11.8rem; }
+  .btn-cat i {
+    position: absolute;
+    top: 29%;
+    right: 10%; }
+  .btn-cat + .dropdown-menu {
+    background-color: #242424;
+    border: 1px solid #2e2e2e; }
+
+.dropdown-item {
+  color: #fff; }
+  .dropdown-item:hover {
+    color: #57c5a0;
+    background-color: inherit; }
+
+.view-nav .show-all {
+  background-color: transparent;
+  color: inherit; }
+.view-nav a {
+  padding: 3px 6px; }
+.view-nav .dropdown-item {
+  color: #bcb5a7; }
+  .view-nav .dropdown-item:hover {
+    color: #000;
+    background-color: inherit; }
+
+.dropdown .show-all {
+  min-width: 180px; }
+
+.btn-view {
+  color: #242424;
+  border-color: #242424;
+  text-decoration: none; }
 
 .price-tag {
   background-color: #57c5a0;
@@ -213,9 +257,6 @@ a {
   .flickr-grid img {
     width: 60px;
     cursor: pointer; }
-
-.show {
-  height: 100%; }
 
 .modal-body {
   text-align: center; }
@@ -309,6 +350,54 @@ a {
   .btn-outline-primary:hover {
     color: #242424;
     background-color: #57c5a0; }
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  margin: 0 auto 1.5rem; }
+  .list .card {
+    border: none; }
+  .list .card-body + div {
+    display: none; }
+  .list .card-body:hover ul {
+    justify-content: center !important; }
+  .list .list-caption {
+    display: block;
+    width: 50%;
+    text-align: left;
+    padding-top: 3rem;
+    margin-left: 3rem; }
+
+.list-caption {
+  display: none; }
+
+.card {
+  margin: 0 8px 16px; }
+  .card .price-tag {
+    position: absolute;
+    transform: translateY(0);
+    bottom: 0;
+    left: 1rem; }
+
+.card-body {
+  border-top: 2px solid #ebe7df;
+  padding: 0.7rem;
+  font-size: 1.125rem; }
+  .card-body ul {
+    display: none; }
+  .card-body .nav-link {
+    padding: 0.4rem 1rem; }
+  .card-body:hover {
+    padding: 0.18rem; }
+    .card-body:hover span {
+      display: none; }
+    .card-body:hover ul {
+      display: flex;
+      justify-content: flex-end !important; }
 
 .header-top {
   background-color: #242424;
@@ -450,30 +539,6 @@ a {
 .product .row {
   padding: 30px 0 0; }
 
-.card {
-  margin: 0 8px; }
-  .card .price-tag {
-    position: absolute;
-    transform: translateY(0);
-    bottom: 0;
-    left: 1rem; }
-
-.card-body {
-  border-top: 2px solid #ebe7df;
-  padding: 0.7rem;
-  font-size: 1.125rem; }
-  .card-body ul {
-    display: none; }
-  .card-body .nav-link {
-    padding: 0.4rem 1rem; }
-  .card-body:hover {
-    padding: 0.18rem; }
-    .card-body:hover span {
-      display: none; }
-    .card-body:hover ul {
-      display: flex;
-      justify-content: flex-end !important; }
-
 .blog-row {
   display: flex;
   flex-direction: row;
@@ -501,7 +566,7 @@ a {
     padding: 17px 0 0; }
 
 hr {
-  margin: 4rem 0.5rem 2rem; }
+  margin: 3rem 0.5rem 2rem; }
 
 footer {
   background-color: #242424;
@@ -558,5 +623,28 @@ footer {
   .banner-caption .price-tag {
     transform: none;
     margin-right: 1.375rem; }
+
+.cat {
+  background-color: #2e2e2e; }
+  .cat h4 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 2rem 0; }
+  .cat .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .cat .container > * {
+      flex: 1; }
+
+.view-nav {
+  display: flex;
+  align-items: center; }
+  .view-nav > * {
+    flex: 1 0 auto;
+    margin: 0 0.3125rem; }
+
+.pro .row:first-child p {
+  margin: 10px; }
 
 /*# sourceMappingURL=application.css.map */

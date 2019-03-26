@@ -1,0 +1,30 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    border-radius: 0.25rem;
+    background-color: $white;
+    margin: 0 auto 1.5rem;
+    .card {
+        border: none;
+    }
+    .card-body + div {
+        display: none;
+    }
+    .card-body:hover ul {
+        justify-content: center!important;
+    }
+    .list-caption {
+        display: block;
+        width: 50%;
+        text-align: left;
+        padding-top: 3rem;
+        margin-left: 3rem;
+    }
+}
+
+
+.list-caption {
+    display: none;
+}

@@ -1,0 +1,31 @@
+.card {
+    margin: 0 8px 16px;
+    .price-tag {
+        position: absolute;
+        transform: translateY(0);
+        bottom: 0;
+        left: 1rem;
+    }
+}
+
+.card-body {
+    border-top: 2px solid $color-background;
+    padding: 0.7rem;
+    font-size: 1.125rem;
+    ul {
+        display: none;
+    }
+    .nav-link {
+        padding: 0.4rem 1rem;
+    }
+    &:hover {
+        padding: 0.18rem;
+        span {
+            display: none;
+        }
+        ul {
+            display: flex;
+            justify-content: flex-end!important;
+        }
+    }
+}

@@ -6,7 +6,9 @@
     }
 }
 
-.show {
+// Show All Button ========================================================================
+
+.show-all {
     border: 1px solid $color-btn-show;
     color: $color-btn-show;
     font-size: 0.875rem;
@@ -17,4 +19,61 @@
         border-color: $color-prim;
         text-decoration: none;
     }
+}
+
+// Dropdown Button (Categories) ===========================================================
+
+.btn-cat {
+    background-color: $color-prim;
+    border: none;
+    color: $white;
+    padding: 1rem 3.75rem;
+    position: relative;
+    min-width: 11.8rem;
+    i {
+        position: absolute;
+        top: 29%;
+        right: 10%;
+    }
+    & + .dropdown-menu {
+        background-color: $color-prim;
+        border: 1px solid $color-sec;
+    }
+}
+
+.dropdown-item {
+    color: $white;
+    &:hover {
+        color: $color-highlight;
+        background-color: inherit;
+    }
+}
+
+// View Buttons ===========================================================
+
+.view-nav {
+    .show-all {
+        background-color: transparent;
+        color: inherit;
+    }
+    a {
+        padding: 3px 6px;
+    }
+    .dropdown-item {
+        color: $color-btn-show;
+        &:hover {
+            color: $black;
+            background-color: inherit;
+        }
+    }
+}
+
+.dropdown .show-all {
+    min-width: 180px;
+}
+
+.btn-view {
+    color: $color-prim;
+    border-color: $color-prim;
+    text-decoration: none;
 }

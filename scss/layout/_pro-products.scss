@@ -1,0 +1,14 @@
+.view-nav {
+    display: flex;
+    align-items: center;
+    & > * {
+        flex: 1 0 auto;
+        margin: 0 0.3125rem;
+    }
+}
+
+.pro .row:first-child p {
+    // align-items: flex-end;
+    // background-color: red;
+    margin: 10px;
+}

@@ -20,6 +20,10 @@ body {
     max-width: 720px;
     width:90%;
   }
+  @media #{$brk-narrow} {
+    max-width: 320px;
+    width:95%;
+  }
 }
 
 .row {

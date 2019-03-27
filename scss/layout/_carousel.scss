@@ -16,6 +16,9 @@
     .active {
         background-color: $color-highlight;
     }
+    @media #{$brk-narrow} {
+        display: none;
+    }
 }
 
 .bar {
@@ -23,7 +26,6 @@
     top: 7px;
     left: 0;
     right: 0;
-    width: 42%;
     height: 12px;
     background-color: $black;
     z-index: -1;
@@ -44,9 +46,27 @@
     transform: translateY(-50%);
     left: 50%;
     text-align: left;
-    font-family: 'Aller Light', Helvetica, Arial, sans-serif;
+    font-family: $font-sec;
     p {
         font-size: 1.2rem;
+    }
+    @media #{$brk-mid} {
+        top: 30%;
+        h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        p {
+            font-size: 0.7rem;
+            margin-bottom: 0.25rem;
+        }
+        .price-tag {
+            transform: none;
+            margin-bottom: 0.375rem;
+        }
+        .nav-item {
+            font-size: 0.625rem;
+        }
     }
 }
 

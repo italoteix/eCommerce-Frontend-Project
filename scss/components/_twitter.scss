@@ -2,4 +2,7 @@
     span {
         color: $color-highlight;
     }
+    @media #{$brk-mid} {
+        display: none;
+    }
 }

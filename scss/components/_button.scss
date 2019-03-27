@@ -1,9 +1,22 @@
+// Wishlist and Cart ========================================================================
+
 .button {
     padding: 1rem 2rem;
     border-left: 1px solid $color-background;
+    cursor: pointer;
     &:last-of-type {
         border-right: 1px solid $color-background;
     }
+    @media #{$brk-mid} {
+        padding: 1rem 1rem;
+        flex: 1;
+    }
+}
+
+.button:hover {
+    span {
+        background-color: $color-highlight;
+    }   
 }
 
 // Show All Button ========================================================================

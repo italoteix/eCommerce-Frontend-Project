@@ -11,21 +11,33 @@
 .card-body {
     border-top: 2px solid $color-background;
     padding: 0.7rem;
+    padding-left: 33%;
     font-size: 1.125rem;
+    white-space: nowrap;
     ul {
         display: none;
     }
     .nav-link {
-        padding: 0.4rem 1rem;
+        padding: 0.4rem 0.625rem;
     }
     &:hover {
         padding: 0.18rem;
+        padding-left: 33%;
         span {
             display: none;
         }
         ul {
             display: flex;
-            justify-content: flex-end!important;
+            flex-wrap: nowrap;
         }
+    }
+    @media #{$brk-mid} {
+        font-size: 0.875rem;
+        .nav-link {
+            padding: 0.4rem 0.5rem;
+        }
+    }
+    @media #{$brk-narrow} {
+        font-size: 1.5rem
     }
 }

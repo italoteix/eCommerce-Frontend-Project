@@ -5,11 +5,15 @@
     background-color: $color-prim;
     .container {
         display: flex;
-        flex-grow: 1;
+        flex-wrap: nowrap;
+        @media #{$brk-narrow} {
+            flex-direction: column;
+        }
     }
     .card-item {
         margin: 24px 9px;
         position: relative;
+        flex: 1;
     }
     .card-caption {
         white-space: nowrap;
@@ -22,5 +26,10 @@
         a {
             color: inherit;
         }
+        @media #{$brk-mid} {
+            padding: 12px 16px;
+            font-size: 1.2rem;
+        }
     }
 }
+

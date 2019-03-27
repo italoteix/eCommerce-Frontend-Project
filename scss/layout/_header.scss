@@ -64,6 +64,13 @@
     }
 }
 
+.navbar {
+    margin-right: auto;
+    @media #{$brk-mid} {
+        margin-right: 0;
+    }
+}
+
 .badge {
     background-color: $color-span;
     color: $white;
@@ -75,14 +82,4 @@
     position: relative;
     bottom: 2px;
     margin-left: 4px;
-}
-
-.button {
-    cursor: pointer;
-}
-
-.button:hover {
-    span {
-        background-color: $color-highlight;
-    }   
 }

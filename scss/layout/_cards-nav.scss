@@ -1,8 +1,8 @@
 .cards-nav {
+    background-color: $color-prim;
     color: $white;
     font-family: $font-sec;
     font-size: 1.58rem;
-    background-color: $color-prim;
     .cont {
         display: flex;
         flex-wrap: nowrap;
@@ -12,23 +12,23 @@
     }
     .card-item {
         margin: 24px 9px;
-        position: relative;
         flex: 1;
+        position: relative;
     }
     .card-caption {
-        white-space: nowrap;
-        padding: 12px 23px;
         background-color: $color-prim-alpha;
+        left: 50%;
+        padding: 12px 23px;
         position: absolute;
         top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%);
+        white-space: nowrap;
         a {
             color: inherit;
         }
         @media #{$brk-mid} {
-            padding: 12px 16px;
             font-size: 1.2rem;
+            padding: 12px 16px;
         }
     }
 }

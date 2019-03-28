@@ -1,15 +1,15 @@
 // Wishlist and Cart ========================================================================
 
 .button {
-    padding: 1rem 2rem;
     border-left: 1px solid $color-background;
     cursor: pointer;
+    padding: 1rem 2rem;
     &:last-of-type {
         border-right: 1px solid $color-background;
     }
     @media #{$brk-mid} {
-        padding: 1rem 1rem;
         flex: 1;
+        padding: 1rem 1rem;
     }
 }
 
@@ -25,8 +25,8 @@
     border: 1px solid $color-btn-show;
     color: $color-btn-show;
     font-size: 0.875rem;
-    padding: 3px 21px;
     height: 1.9rem;
+    padding: 3px 21px;
     &:hover {
         color: $color-prim;
         border-color: $color-prim;
@@ -36,17 +36,23 @@
 
 // Dropdown Button (Categories) ===========================================================
 
+.cat .dropdown {
+    @media #{$brk-narrow} {
+        margin-bottom: 2rem;
+    }
+}
+
 .btn-cat {
     background-color: $color-prim;
     border: none;
     color: $white;
+    min-width: 11.8rem;
     padding: 1rem 3.75rem;
     position: relative;
-    min-width: 11.8rem;
     i {
         position: absolute;
-        top: 29%;
         right: 10%;
+        top: 29%;
     }
     & + .dropdown-menu {
         background-color: $color-prim;
@@ -57,8 +63,8 @@
 .dropdown-item {
     color: $white;
     &:hover {
-        color: $color-highlight;
         background-color: inherit;
+        color: $color-highlight;
     }
 }
 
@@ -75,8 +81,8 @@
     .dropdown-item {
         color: $color-btn-show;
         &:hover {
-            color: $black;
             background-color: inherit;
+            color: $black;
         }
     }
 }
@@ -85,20 +91,26 @@
     min-width: 180px;
 }
 
+// View Buttons ===========================================================
+
 .btn-view {
-    color: $color-prim;
     border-color: $color-prim;
+    color: $color-prim;
     text-decoration: none;
 }
+
+// Navbar collapsed ===========================================================
 
 .navbar-toggler {
     border: none;
 }
 
+// Search for narrow screens ===========================================================
+
 .search-narrow {
+    align-items: center;
     border-left: 1px solid $color-background;
     display: none;
-    align-items: center;
     justify-content: center;
     @media #{$brk-narrow} {
         display: flex;

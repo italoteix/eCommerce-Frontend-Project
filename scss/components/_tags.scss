@@ -2,57 +2,57 @@
     background-color: $color-highlight;
     color: $white;
     display: inline-block;
+    font-family: $font-prim;
     font-size: 12px;
-    width: 60px;
     height: 60px;
-    text-align: center;
     line-height: 60px;
-    font-family: 'Aller', Helvetica, Arial, sans-serif;
+    text-align: center;
+    width: 60px;
 }
 
 .tag-sale {
     background-color: $color-prim;
     color: $white;
     display: inline-block;
+    font-family: $font-prim;
     font-size: 12px;
-    width: 60px;
     height: 60px;
-    text-align: center;
     line-height: 60px;
-    font-family: 'Aller', Helvetica, Arial, sans-serif;
     position: absolute;
-    top: 0;
     right: 1rem;
+    text-align: center;
+    top: 0;
+    width: 60px;
 }
 
 .tag-out {
     background-color: $color-comp;
     color: $white;
     display: inline-block;
+    font-family: $font-prim;
     font-size: 12px;
-    width: 60px;
     height: 60px;
-    text-align: center;
-    font-family: 'Aller', Helvetica, Arial, sans-serif;
-    position: absolute;
-    top: 0;
-    right: 1rem;
     line-height: 1rem;
     padding-top: 0.8125rem;
+    position: absolute;
+    right: 1rem;
+    text-align: center;
+    top: 0;
+    width: 60px;
 }
 
 .tag-date {
+    align-items: center;
     background-color: $color-highlight;
     color: $white;
-    font-size: 0.625rem;
-    font-weight: bold;
     display: flex;
     flex-direction: column;
-    width: 35px;
+    font-size: 0.625rem;
+    font-weight: bold;
     height: 35px;
     justify-content: center;
-    align-items: center;
     margin-right: 0.625rem;
+    width: 35px;
     span {
         font-size: 0.8125rem;
         line-height: 0.625rem;

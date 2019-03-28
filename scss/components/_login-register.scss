@@ -27,8 +27,8 @@
 .modal-footer {
     border-top: 1px solid $color-sec;
     span {
-        cursor: pointer;
         color: $color-background;
+        cursor: pointer;
         &:hover {
             color: $color-highlight;
         }
@@ -36,10 +36,10 @@
 }
 
 .btn-outline-primary {
-    color: $color-highlight;
     border-color: $color-highlight;
+    color: $color-highlight;
     &:hover {
-        color: $color-prim;
         background-color: $color-highlight;
+        color: $color-prim;
     }
 }

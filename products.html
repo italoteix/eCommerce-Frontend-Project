@@ -13,19 +13,24 @@
 </head>
 
 <body>
+
     <!-- Header section -->
     <header>
+
         <!-- Top Header -->
         <div class="header-top">
-            <div class="container">
+            <div class="cont">
                 <div class="row">
+
                     <!-- logo -->
                     <a id="logo" class="mr-auto" href="index.html">FOOSESHOES</a>
+
                     <!-- search bar -->
                     <form class="search-form">
                         <input id="myInput" type="text" placeholder="SEARCH" aria-label="Search">
                         <button type="submit"><i class="flaticon-search"></i></button>
                     </form>
+                    
                     <!-- login button -->
                     <div class="btn-login">
                         <a href="#" data-toggle="modal" data-target=".login-form">
@@ -117,16 +122,18 @@
                             </div>
                         </div>
                     </div> <!-- / modal End -->
+
                 </div> <!-- / row End -->
             </div> <!-- / container End -->
         </div> <!-- / header top End -->
 
         <!-- Bottom Header -->
         <div class="header-bottom">
-            <div class="container">
+            <div class="cont">
                 <div class="row">
+
                     <!-- Main Nav -->
-                    <nav class="navbar navbar-expand-lg navbar-light mr-auto">
+                    <nav class="navbar navbar-expand-md navbar-light mr-auto">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -154,16 +161,46 @@
                             </ul>
                         </div>
                     </nav>
+
+                    <!-- Search Button -->
+                    <a class="search-narrow" data-toggle="modal" data-target=".search-modal">
+                        <i class="flaticon-search"></i>
+                    </a>
+
+                    <!-- Search Modal -->
+                    <div class="modal fade search-modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Search here</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    <form class="search-form">
+                                        <input id="myInput2" type="text" placeholder="SEARCH" aria-label="Search">
+                                        <button type="submit"><i class="flaticon-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Wishlist -->
                     <div class="button">
                         <i class="flaticon-star"></i>
                         <span class="badge">30</span>
                     </div>
+
                     <!-- cart -->
                     <div class="button">
                         <i class="flaticon-cart-simple"></i>
                         <span class="badge">0</span>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -173,22 +210,26 @@
     <main>
         <!-- Banner -->
         <div class="banner">
-            <img class="img-fluid" src="img/banner-produtos.png" alt="banner products">
-            <div class="banner-caption">
-                <div class="row">
-                    <div class="price-tag">$145,99</div>
-                    <h1>Pink Shoes 2013 Collection</h1>
+            <img src="img/banner-produtos.png" alt="banner products">
+            <div class="cont">
+                <div class="banner-caption">
+                    <div class="row">
+                        <div class="price-tag">$145,99</div>
+                        <h1>Pink Shoes 2013 Collection</h1>
+                    </div>
+                    <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim
+                        dolor
+                        eget.</p>
                 </div>
-                <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim
-                    dolor
-                    eget.</p>
             </div>
         </div>
 
         <!-- Categories menu -->
         <div class="cat">
-            <div class="container">
+            <div class="cont">
                 <h4>Shop by</h4>
+
+                <!-- Brand -->
                 <div class="dropdown">
                     <button class="btn-cat" type="button" id="brands" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
@@ -201,6 +242,8 @@
                         <a class="dropdown-item" href="#">Gucci</a>
                     </div>
                 </div>
+
+                <!-- Categories -->
                 <div class="dropdown">
                     <button class="btn-cat" type="button" id="categories" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
@@ -213,6 +256,8 @@
                         <a class="dropdown-item" href="#">Women</a>
                     </div>
                 </div>
+
+                <!-- Price -->
                 <div class="dropdown">
                     <button class="btn-cat" type="button" id="price" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
@@ -225,15 +270,16 @@
                         <a class="dropdown-item" href="#">$200 & Above</a>
                     </div>
                 </div>
+                
             </div>
         </div>
 
         <!-- Products section -->
-        <div class="product pro container">
+        <div class="product pro cont">
             <div class="row">
                 <h4>All Products</h4>
                 <p>Home > All Products</p>
-                <div class="ml-auto view-nav">
+                <div class="view-nav">
                     <small>View as</small>
                     <a id="btn-grid" class="show-all btn-view"><i class="flaticon-layout"></i></a>
                     <a id="btn-list" class="show-all"><i class="flaticon-menu"></i></a>
@@ -562,7 +608,8 @@
                         <div class="price-tag">$145,99</div>
                         <h3>Lorem Ipsum</h3>
                         <p>
-                            Aenean semper nunc sit amet neque molestie, vitae vehicula metus luctus. Quisque sed ante mi.
+                            Aenean semper nunc sit amet neque molestie, vitae vehicula metus luctus. Quisque sed ante
+                            mi.
                             Proin dolor lectus, hendrerit non dui vitae, ultricies faucibus mauris. Aenean nisl dolor,
                             mollis sit amet metus sit amet, pellentesque dapibus lorem. Vestibulum ante ipsum primis in
                             faucibus orci luctus et ultrices posuere cubilia Curae;
@@ -599,7 +646,7 @@
     </main>
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="cont">
             <!-- Widget Row -->
             <div class="row widget">
                 <!-- Text Widget -->
@@ -654,7 +701,7 @@
         </div> <!-- / container End -->
         <!-- Social Row -->
         <div class="social">
-            <div class="container">
+            <div class="cont">
                 <!-- Newsletter form -->
                 <form class="newsletter">
                     <input class="field" type="email" placeholder="Enter email for newsletter"></input>
@@ -682,7 +729,7 @@
         </div> <!-- / Social Row End -->
         <!-- Copyright Row -->
         <div class="copyright">
-            <div class="container">
+            <div class="cont">
                 <p>
                     Copyright © Fooseshoes 2013.<br>
                     Designed by EnzoLiVolti.

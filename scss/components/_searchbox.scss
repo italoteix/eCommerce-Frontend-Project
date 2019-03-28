@@ -1,21 +1,21 @@
 .search-form {
-  display: flex;
   align-items: center;
   border-left: 1px solid $color-text-prim;
+  display: flex;
   height: 41px;
   padding: 0 1.4rem;
   position: relative;
   button {
-      border: none;
-      cursor: pointer;
-      background-color: transparent;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
   input {
       background-color: inherit;
       border: none;
       width: 6.2rem;
       &:focus {
-          outline: none;
+        outline: none;
       }
   }
   @media #{$brk-narrow} {
@@ -24,35 +24,29 @@
 }
 
 .modal-body .search-form {
-  display: block;
   border: none;
+  display: block;
   input {
     width: 50%;
   }
 }
 
-// .search-form {
-//   @media #{$brk-narrow} {
-//     display: none!important;
-//   }
-// }
-
 .autocomplete-items {
-    position: absolute;
-    border: 1px solid $color-text-prim;
-    border-bottom: none;
-    border-top: none;
-    z-index: 99;
+  border: 1px solid $color-text-prim;
+  border-bottom: none;
+  border-top: none;
+  position: absolute;
+  z-index: 99;
     /*position the autocomplete items to be the same width as the container:*/
-    top: 100%;
     left: 0;
     right: 0;
+    top: 100%;
   }
   .autocomplete-items div {
-    padding: 10px;
-    cursor: pointer;
     background-color: $color-sec; 
     border-bottom: 1px solid $color-text-prim;
+    cursor: pointer;
+    padding: 10px;
   }
   .autocomplete-items div:hover {
     /*when hovering an item:*/

@@ -4,7 +4,7 @@
     grid-template-rows: repeat(2,60px); /* 2 rows  */
     grid-gap: 12px 12px; /* 12 pixels of space added between rows and 12 pixels added between columns  */
     img {
-        width: 60px;
         cursor: pointer;
+        width: 60px;
     }
 }

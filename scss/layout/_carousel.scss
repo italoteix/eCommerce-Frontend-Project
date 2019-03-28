@@ -1,12 +1,12 @@
 .bd-example {               //  <-- Carousel Parent
-    position: relative;
     background-color: $color-carousel;
+    position: relative;
     .indicator-bg {         //  <-- Side background color for indicators
         background-color: $color-sec;
-        width: 100%;
+        bottom: 0;
         height: 89px;
         position: absolute;
-        bottom: 0;
+        width: 100%;
         @media #{$brk-narrow} {
             display: none;
         }
@@ -28,10 +28,10 @@
 }
 
 .carousel-caption {
-    position: static;
     color: $color-prim;
-    text-align: left;
     font-family: $font-sec;
+    position: static;
+    text-align: left;
     p {
         font-size: 1.2rem;
     }
@@ -40,10 +40,9 @@
     }
 
     @media #{$brk-mid} {
-        position: absolute;
-        // top: 7%;
         bottom: 15%;
         left: 45%;
+        position: absolute;
         width: 50%;
         h1 {
             font-size: 2rem;
@@ -58,16 +57,11 @@
     }
 
     @media #{$brk-narrow} {
-        width: 90%;
+        bottom: 8%;
         left: 5%;
-        // top: none;
-        // bottom: 5%;
         margin: 0;
         padding: 0;
-        // top: -5%;
-        bottom: 8%;
-        // top: 50%;
-        // transform: translateY(-50%);
+        width: 90%;
         h1 {
             font-size: 1.5rem;
         }
@@ -79,15 +73,15 @@
 
 .carousel-indicators {
     background-color: $color-sec;
+    display: block;
     margin: 0;
     position: relative;
-    display: block;
     li {
-        text-indent: 0;
-        width: 11rem;
+        display: inline-block;
         margin-bottom: 4rem;
         padding: 1px;
-        display: inline-block;
+        text-indent: 0;
+        width: 11rem;
     }
     h5 {
         color: $white;
@@ -101,18 +95,18 @@
 }
 
 .bar {
-    position: absolute;
-    top: 7px;
-    left: 0;
-    right: 0;
-    height: 12px;
     background-color: $black;
-    z-index: -1;
     display: flex;
+    height: 12px;
+    left: 0;
     margin: auto;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    z-index: -1;
     div {
-        flex-grow: 1;
         border-right: 2px solid $color-sec;
+        flex-grow: 1;
         &:last-child {
             border-right: none;
         }

@@ -1,14 +1,36 @@
 .view-nav {
-    display: flex;
     align-items: center;
+    display: flex;
+    margin-left: auto;
     & > * {
         flex: 1 0 auto;
         margin: 0 0.3125rem;
     }
+    @media #{$brk-narrow} {
+        margin-left: 0;
+    }
 }
 
-.pro .row:first-child p {
-    // align-items: flex-end;
-    // background-color: red;
-    margin: 10px;
+.pro > .row:nth-child(2) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    .card {
+        margin: 0 0.125rem 1rem;
+    }
+    @media  #{$brk-mid} {
+        justify-content: center;
+        .card {
+            margin: 0 0.5rem 1rem;
+        }
+    }
+}
+
+.pro .row:first-child {
+    p {
+        margin: 10px;
+    }
+    @media #{$brk-narrow} {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 }

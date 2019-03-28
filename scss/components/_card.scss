@@ -1,17 +1,17 @@
 .card {
     margin: 0 8px 16px;
     .price-tag {
-        position: absolute;
         bottom: 0;
         left: 1rem;
+        position: absolute;
     }
 }
 
 .card-body {
     border-top: 2px solid $color-background;
+    font-size: 1.125rem;
     padding: 0.7rem;
     padding-left: 33%;
-    font-size: 1.125rem;
     white-space: nowrap;
     ul {
         display: none;

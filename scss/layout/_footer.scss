@@ -6,8 +6,8 @@ footer {
 .widget {
     & > div {
         flex: 1;
-        text-align: justify;
         margin: 3rem 2rem;
+        text-align: justify;
     }
     h6 {
         margin-bottom: 0.9rem;
@@ -39,8 +39,8 @@ footer {
         justify-content: space-between;
         padding: 2rem 0;
         @media #{$brk-narrow} {
-            flex-direction: column;
             align-items: center;
+            flex-direction: column;
         }
     }
 }
@@ -48,10 +48,10 @@ footer {
 .copyright {
     background-color: $color-sec;
     .cont {
+        align-items: center;
         display: flex;
         justify-content: space-between;
         padding: 1.5625rem 0.635rem;
-        align-items: center;
         @media #{$brk-narrow} {
             flex-direction: column;
             p:first-child {
@@ -61,7 +61,7 @@ footer {
         }
     }
     p {
-        text-align: left;
         margin: 0;
+        text-align: left;
     }
 }

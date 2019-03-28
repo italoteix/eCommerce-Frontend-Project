@@ -113,6 +113,7 @@ function autocomplete(inp, arr) {
 }
 
 autocomplete(document.getElementById("myInput"), searchAuto);
+autocomplete(document.getElementById("myInput2"), searchAuto);
 
 
 

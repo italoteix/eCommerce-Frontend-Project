@@ -22,6 +22,10 @@ footer {
         justify-content: space-between;
     }
     @media #{$brk-narrow} {
+        flex-direction: column;
+        &>div:first-child {
+            margin-bottom: 0;
+        }
         h6 + p {
             margin-bottom: 0;
         }
@@ -30,22 +34,23 @@ footer {
 
 .social {
     border-top: 2px solid #1c1c1c;
-    .container {
+    .cont {
         display: flex;
         justify-content: space-between;
-        padding: 2rem;
+        padding: 2rem 0;
         @media #{$brk-narrow} {
             flex-direction: column;
+            align-items: center;
         }
     }
 }
 
 .copyright {
     background-color: $color-sec;
-    .container {
+    .cont {
         display: flex;
         justify-content: space-between;
-        padding: 1.5625rem 0;
+        padding: 1.5625rem 0.635rem;
         align-items: center;
         @media #{$brk-narrow} {
             flex-direction: column;

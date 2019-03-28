@@ -3,7 +3,7 @@
     font-family: $font-sec;
     font-size: 1.58rem;
     background-color: $color-prim;
-    .container {
+    .cont {
         display: flex;
         flex-wrap: nowrap;
         @media #{$brk-narrow} {

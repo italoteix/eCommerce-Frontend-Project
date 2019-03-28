@@ -6,6 +6,7 @@
     @media #{$brk-narrow} {
         &> div:nth-child(even) {
             flex-direction: column;
+            align-items: center;
         }
         h4 {
             font-size: 1.25rem;
@@ -33,6 +34,7 @@
         }
         .blog:last-child {
             min-width: 65%;
+            
         }
     }
     @media #{$brk-narrow} {
@@ -50,15 +52,16 @@
 
 .blog {
     background-color: $color-blog;
-    max-width: 25%;
     margin: 0 8px;
     padding: 1.8125rem 0.8125rem;
     text-align: left;
     color: $color-prim;
     &:last-of-type {
-        max-width: 50%;
-        flex: 2 0 auto;
-        
+        flex: 2;
+        min-height: 195px;
+    }
+    &:not(:last-of-type) {
+        flex: 1;
     }
     h6 {
         font-size: 0.875rem;

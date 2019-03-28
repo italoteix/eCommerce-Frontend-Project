@@ -6,23 +6,23 @@
   
 body {
   background-color: $color-background;
-    color: $color-text-prim;
-    margin: 0;
-    text-align: center;
-    font-family: $font-prim;
+  color: $color-text-prim;
+  margin: 0;
+  text-align: center;
+  font-family: $font-prim;
 }
 
-.container {
-  width: 80%;
-  max-width: 960px;
-  padding: 0;
+.cont {
+  width: 940px;
+  padding: 0 10px;
+  margin: auto;
   @media #{$brk-mid} {
-    max-width: 720px;
-    width:90%;
+    width: 750px;
+    padding: 0 5px;
   }
   @media #{$brk-narrow} {
-    max-width: 320px;
-    width:95%;
+    
+    width:90%;
   }
 }
 

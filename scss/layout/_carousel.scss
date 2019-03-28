@@ -1,3 +1,82 @@
+.bd-example {               //  <-- Carousel Parent
+    position: relative;
+    background-color: $color-carousel;
+    .indicator-bg {         //  <-- Side background color for indicators
+        background-color: $color-sec;
+        width: 100%;
+        height: 89px;
+        position: absolute;
+        bottom: 0;
+        @media #{$brk-narrow} {
+            display: none;
+        }
+    }
+}
+
+// Align img and .carousel-caption and slide smoothly
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
+    @media #{$brk-mid} {
+        display: block;
+        position: relative;
+    }
+    @media #{$brk-narrow} {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.carousel-caption {
+    position: static;
+    color: $color-prim;
+    text-align: left;
+    font-family: $font-sec;
+    p {
+        font-size: 1.2rem;
+    }
+    .price-tag {
+        margin: 2rem 0 1rem;
+    }
+
+    @media #{$brk-mid} {
+        position: absolute;
+        // top: 7%;
+        bottom: 15%;
+        left: 45%;
+        width: 50%;
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+        .price-tag {
+            margin-bottom: 0.375rem;
+        }
+    }
+
+    @media #{$brk-narrow} {
+        width: 90%;
+        left: 5%;
+        // top: none;
+        // bottom: 5%;
+        margin: 0;
+        padding: 0;
+        // top: -5%;
+        bottom: 8%;
+        // top: 50%;
+        // transform: translateY(-50%);
+        h1 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
+
 .carousel-indicators {
     background-color: $color-sec;
     margin: 0;
@@ -40,35 +119,7 @@
     }
 }
 
-.carousel-caption {
-    color: $color-prim;
-    top: 42%;
-    transform: translateY(-50%);
-    left: 50%;
-    text-align: left;
-    font-family: $font-sec;
-    p {
-        font-size: 1.2rem;
-    }
-    @media #{$brk-mid} {
-        top: 30%;
-        h1 {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        p {
-            font-size: 0.7rem;
-            margin-bottom: 0.25rem;
-        }
-        .price-tag {
-            transform: none;
-            margin-bottom: 0.375rem;
-        }
-        .nav-item {
-            font-size: 0.625rem;
-        }
-    }
-}
+
 
 .carousel {
     position: relative;

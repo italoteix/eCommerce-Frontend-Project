@@ -13,11 +13,11 @@
 </head>
 
 <body>
-  <!-- Header section -->
+  <!-- ----------------   Header section   -------------- -->
   <header>
     <!-- Top Header -->
     <div class="header-top">
-      <div class="container">
+      <div class="cont">
         <div class="row">
           <!-- logo -->
           <a id="logo" class="mr-auto" href="index.html">FOOSESHOES</a>
@@ -119,7 +119,7 @@
 
     <!-- Bottom Header -->
     <div class="header-bottom">
-      <div class="container">
+      <div class="cont">
         <div class="row">
           <!-- Main Nav -->
           <nav class="navbar navbar-expand-md navbar-light">
@@ -150,6 +150,31 @@
               </ul>
             </div>
           </nav>
+          <!-- Search Button -->
+          <a class="search-narrow" data-toggle="modal" data-target=".search-modal">
+            <i class="flaticon-search"></i>
+          </a>
+          <!-- Search Modal -->
+          <div class="modal fade search-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h5 class="modal-title">Search here</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                  <form class="search-form">
+                    <input id="myInput2" type="text" placeholder="SEARCH" aria-label="Search">
+                    <button type="submit"><i class="flaticon-search"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Wishlist -->
           <div class="button">
             <i class="flaticon-star"></i>
@@ -164,112 +189,118 @@
       </div>
     </div>
   </header>
-  <!-- Main Content -->
+
+
+  <!-- ------------------------ Main Content ------------------------- -->
   <main>
+
     <!-- Carousel -->
     <div class="bd-example">
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <!-- Carousel inner -->
-        <div class="carousel-inner">
-          <!-- First Banner -->
-          <div class="carousel-item active">
-            <img src="img/Agrupar 1.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <div class="price-tag">$145,99</div>
-              <h1>Pink Shoes 2013 Collection</h1>
-              <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor
-                eget.</p>
-              <ul class="nav nav-icons">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#"><i class="flaticon-eye"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
-                </li>
-              </ul>
+      <div class="cont">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <!-- Carousel inner -->
+          <div class="carousel-inner">
+            <!-- First Banner -->
+            <div class="carousel-item active">
+              <img src="img/banner1.jpg" class="d-block" alt="...">
+              <div class="carousel-caption d-md-block">
+                <div class="price-tag">$145,99</div>
+                <h1>Pink Shoes 2013 Collection</h1>
+                <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor
+                  eget.</p>
+                <ul class="nav nav-icons">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="flaticon-eye"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Second Banner -->
+            <div class="carousel-item">
+              <img src="img/banner2.png" class="d-block" alt="...">
+              <div class="carousel-caption d-md-block">
+                <div class="price-tag">$145,99</div>
+                <h1>Anna Field Exclusive Limited Edition</h1>
+                <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor
+                  eget.</p>
+                <ul class="nav nav-icons">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="flaticon-eye"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Third Banner -->
+            <div class="carousel-item">
+              <img src="img/banner3.png" class="d-block" alt="...">
+              <div class="carousel-caption d-md-block">
+                <div class="price-tag">$145,99</div>
+                <h1>Prada's Summer Collection is Comming</h1>
+                <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor
+                  eget.</p>
+                <ul class="nav nav-icons">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="flaticon-eye"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <!-- Second Banner -->
-          <div class="carousel-item">
-            <img src="img/banner2.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <div class="price-tag">$145,99</div>
-              <h1>Anna Field Exclusive Limited Edition</h1>
-              <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor
-                eget.</p>
-              <ul class="nav nav-icons">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#"><i class="flaticon-eye"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
-                </li>
-              </ul>
+          <!-- Carousel indicator -->
+          <ol class="carousel-indicators hidden">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">
+              <h5>Pink Shoes</h5>
+              <p>Now at $145,99</p>
+            </li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1">
+              <h5>Anna Field</h5>
+              <p>Limited Edition</p>
+            </li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2">
+              <h5>Prada</h5>
+              <p>Summer is comming</p>
+            </li>
+            <div class="bar">
+              <div class="bar-cel"></div>
+              <div class="bar-cel"></div>
+              <div class="bar-cel"></div>
             </div>
-          </div>
-          <!-- Third Banner -->
-          <div class="carousel-item">
-            <img src="img/banner3.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <div class="price-tag">$145,99</div>
-              <h1>Prada's Summer Collection is Comming</h1>
-              <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor
-                eget.</p>
-              <ul class="nav nav-icons">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#"><i class="flaticon-eye"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-star"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-export"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="flaticon-buy"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          </ol>
         </div>
-        <!-- Carousel indicator -->
-        <ol class="carousel-indicators hidden">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">
-            <h5>Pink Shoes</h5>
-            <p>Now at $145,99</p>
-          </li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1">
-            <h5>Anna Field</h5>
-            <p>Limited Edition</p>
-          </li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2">
-            <h5>Prada</h5>
-            <p>Summer is comming</p>
-          </li>
-          <div class="bar">
-            <div class="bar-cel"></div>
-            <div class="bar-cel"></div>
-            <div class="bar-cel"></div>
-          </div>
-        </ol>
-      </div>
+      </div>    <!-- / container End -->
+      <div class="indicator-bg"></div>
     </div>
 
     <!-- Cards Nav -->
     <div class="cards-nav">
-      <div class="container">
+      <div class="cont">
         <div class="card-item">
           <div class="card-caption"><a href="#">ON SALE</a></div>
           <img class="img-fluid" src="img/onsale.png" alt="On sale">
@@ -286,7 +317,7 @@
     </div>
 
     <!-- Products Section -->
-    <div class="product container">
+    <div class="product cont">
       <!-- New arrivals -->
       <div class="row">
         <h4 class="mr-auto">New arrivals on FooseShoes</h4>
@@ -456,9 +487,11 @@
       </div>
     </div>
   </main>
-  <!-- Footer -->
+
+
+  <!--    --------------   Footer   --------------    -->
   <footer>
-    <div class="container">
+    <div class="cont">
       <!-- Widget Row -->
       <div class="row widget">
         <!-- Text Widget -->
@@ -506,7 +539,7 @@
     </div> <!-- / container End -->
     <!-- Social Row -->
     <div class="social">
-      <div class="container">
+      <div class="cont">
         <!-- Newsletter form -->
         <form class="newsletter">
           <input class="field" type="email" placeholder="Enter email for newsletter"></input>
@@ -534,7 +567,7 @@
     </div> <!-- / Social Row End -->
     <!-- Copyright Row -->
     <div class="copyright">
-      <div class="container">
+      <div class="cont">
         <p>
           Copyright © Fooseshoes 2013.<br>
           Designed by EnzoLiVolti.

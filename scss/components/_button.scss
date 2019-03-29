@@ -3,13 +3,17 @@
 .button {
     border-left: 1px solid $color-background;
     cursor: pointer;
-    padding: 1rem 2rem;
+    flex: 1;
+    padding: 1rem 1rem;
+    white-space: nowrap;
     &:last-of-type {
         border-right: 1px solid $color-background;
     }
-    @media #{$brk-mid} {
-        flex: 1;
-        padding: 1rem 1rem;
+    @media #{$brk-lg} {
+        &:first-of-type {
+            margin-left: auto;
+        }
+        padding: 1rem 2rem;
     }
 }
 
@@ -34,11 +38,16 @@
     }
 }
 
+.view-nav a.show-all {
+    padding: 0.1875rem 0.4rem;
+}
+
 // Dropdown Button (Categories) ===========================================================
 
 .cat .dropdown {
+    margin-bottom: 2rem;
     @media #{$brk-narrow} {
-        margin-bottom: 2rem;
+        margin-bottom: 0;
     }
 }
 
@@ -110,9 +119,9 @@
 .search-narrow {
     align-items: center;
     border-left: 1px solid $color-background;
-    display: none;
+    display: flex;
     justify-content: center;
     @media #{$brk-narrow} {
-        display: flex;
+        display: none;
     }
 }

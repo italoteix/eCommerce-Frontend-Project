@@ -4,10 +4,15 @@ footer {
 }
 
 .widget {
+    flex-direction: column;
+    justify-content: space-between;
     & > div {
         flex: 1;
         margin: 3rem 2rem;
         text-align: justify;
+        &:first-child {
+            margin-bottom: 0;
+        }
     }
     h6 {
         margin-bottom: 0.9rem;
@@ -16,31 +21,33 @@ footer {
         font-style: italic;
     }
     h6 + p {
-        margin-bottom: 3rem;
-    }
-    @media #{$brk-mid} {
-        justify-content: space-between;
+        margin-bottom: 0;
     }
     @media #{$brk-narrow} {
-        flex-direction: column;
-        &>div:first-child {
-            margin-bottom: 0;
-        }
+        flex-direction: row;
         h6 + p {
-            margin-bottom: 0;
+            margin-bottom: 3rem;
         }
+        & > div:first-child {
+            margin-bottom: 3rem;
+        }
+    }
+    @media #{$brk-lg} {
+        justify-content: space-around;
     }
 }
 
 .social {
     border-top: 2px solid #1c1c1c;
     .cont {
+        align-items: center;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         padding: 2rem 0;
         @media #{$brk-narrow} {
-            align-items: center;
-            flex-direction: column;
+            align-items: stretch;
+            flex-direction: row;
         }
     }
 }
@@ -50,18 +57,23 @@ footer {
     .cont {
         align-items: center;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         padding: 1.5625rem 0.635rem;
-        @media #{$brk-narrow} {
-            flex-direction: column;
-            p:first-child {
+        p {
+            margin: 0;
+            text-align: left;
+            &:first-child {
                 margin-bottom: 1rem;
                 text-align: center;
             }
         }
-    }
-    p {
-        margin: 0;
-        text-align: left;
+        @media #{$brk-narrow} {
+            flex-direction: row;
+            p:first-child {
+                margin-bottom: 0;
+                text-align: left;
+            }
+        }
     }
 }

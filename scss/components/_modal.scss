@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media #{brk-narrow} {
     .search-modal {
         display: none;
     }

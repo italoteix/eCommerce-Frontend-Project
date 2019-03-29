@@ -8,12 +8,13 @@
     .cont {
         align-items: center;
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         &> * {
             flex: 1;
         }
         @media #{$brk-narrow} {
-            flex-direction: column;
+            flex-direction: row;
         }
     }
 }

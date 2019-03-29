@@ -1,8 +1,10 @@
 .twitter {
+    display: none;
     span {
         color: $color-highlight;
     }
-    @media #{$brk-mid} {
-        display: none;
+    @media #{$brk-lg} {
+        display: block;
+        min-height: 223.34px;
     }
 }

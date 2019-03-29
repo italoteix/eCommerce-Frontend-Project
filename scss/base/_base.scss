@@ -13,15 +13,15 @@ body {
 }
 
 .cont {
-  padding: 0 10px;
+  padding: 0 5px;
   margin: auto;
-  width: 940px;
-  @media #{$brk-mid} {
-    padding: 0 5px;
+  width: 90%;
+  @media #{$brk-narrow} {
     width: 750px;
   }
-  @media #{$brk-narrow} {
-    width:90%;
+  @media #{$brk-lg} {
+    padding: 0 10px;
+    width: 940px;
   }
 }
 

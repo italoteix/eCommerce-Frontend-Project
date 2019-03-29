@@ -30,8 +30,9 @@ $color-white-alpha      : rgba(255, 255, 255, 0.8);
 
 $font-prim  : 'Aller', Helvetica, Arial, sans-serif;
 $font-sec   : 'Aller Light', Helvetica, Arial, sans-serif;
+$font-logo  : 'gothic', Helvetica, Arial, sans-serif;
 
 // Media query breakpoints
 
-$brk-mid : '(max-width: 960px)';
-$brk-narrow   : '(max-width: 768px)';
+$brk-lg       : '(min-width: 961px)';
+$brk-narrow   : '(min-width: 768px)';

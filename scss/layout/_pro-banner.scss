@@ -8,8 +8,9 @@
     }
     img {
         position: absolute;
+        left: -50%;
         @media #{$brk-narrow} {
-            left: -50%;
+            left: auto;
         }
     }
 }
@@ -21,12 +22,13 @@
     margin-top: 2rem;
     margin-left: auto;
     text-align: left;
-    width: 23.75rem;
+    width: 18.75rem;
     p {
         font-size: 1.2rem;
     }
     h1 {
         flex: 3;
+        font-size: 1.9rem;
     }
     .row {
         align-items: center
@@ -34,5 +36,11 @@
     .price-tag {
         margin-right: 1.375rem;
         transform: none;
+    }
+    @media (min-width: 400px) {
+        width: 23.75rem;
+        h1 {
+            font-size: 2.5rem;
+        }
     }
 }

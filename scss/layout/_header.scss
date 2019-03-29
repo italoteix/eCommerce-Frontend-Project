@@ -7,8 +7,6 @@
     }
 }
 
-
-
 .btn-login {
     align-items: center;
     border-left: 1px solid $color-text-prim;
@@ -20,8 +18,13 @@
 
 #logo {
     color: $color-highlight;
-    font-family: 'gothic', Helvetica, Arial, sans-serif;
-    font-size: 1.6875rem;
+    font-family: $font-logo;
+    font-size: 1.375rem;
+    margin: auto 0;
+    @media (min-width: 360px) {
+        font-size: 1.6875rem;
+        margin: 0;
+    }
 }
 
 .header-bottom {
@@ -29,13 +32,10 @@
     .navbar {
         padding: 0;
     }
-}
-
-@media #{$brk-narrow} {
-    .header-bottom .row {
-        display: flex;
-        &>* {
-            flex: 1;
+    .row > * {
+        flex: 1;
+        @media #{$brk-lg} {
+            flex: 0;
         }
     }
 }
@@ -54,10 +54,12 @@
 }
 
 .navbar {
+    border-left: 1px solid $color-background;
+    justify-content: center;
     margin-right: auto;
     @media #{$brk-narrow} {
-        border-left: 1px solid $color-background;
-        justify-content: center;
+        border-left: none;
+        justify-content: flex-start;
     }
 }
 

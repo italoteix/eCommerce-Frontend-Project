@@ -1,7 +1,7 @@
 .search-form {
   align-items: center;
   border-left: 1px solid $color-text-prim;
-  display: flex;
+  display: none;
   height: 41px;
   padding: 0 1.4rem;
   position: relative;
@@ -19,7 +19,7 @@
       }
   }
   @media #{$brk-narrow} {
-    display: none;
+    display: flex;
   }
 }
 

@@ -1,36 +1,38 @@
 .view-nav {
     align-items: center;
     display: flex;
-    margin-left: auto;
+    margin-left: 0;
     & > * {
         flex: 1 0 auto;
         margin: 0 0.3125rem;
     }
     @media #{$brk-narrow} {
-        margin-left: 0;
+        margin-left: auto;
     }
 }
 
 .pro > .row:nth-child(2) {
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     .card {
-        margin: 0 0.125rem 1rem;
+        margin: 0 0.5rem 1rem;
     }
-    @media  #{$brk-mid} {
-        justify-content: center;
+    @media  #{$brk-lg} {
+        justify-content: flex-start;
         .card {
-            margin: 0 0.5rem 1rem;
+            margin: 0 0.125rem 1rem;
         }
     }
 }
 
 .pro .row:first-child {
+    flex-wrap: wrap;
+    justify-content: flex-start;
     p {
         margin: 10px;
     }
     @media #{$brk-narrow} {
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        flex-wrap: nowrap;
     }
 }
